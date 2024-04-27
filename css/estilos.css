@@ -153,7 +153,7 @@ main {
       main .muebles .carousel-inner .carousel-item img {
         opacity: 0.6; }
       main .muebles .carousel-inner .carousel-item .carousel-text {
-        margin-bottom: 45%;
+        margin-bottom: 70%;
         margin-left: 50%;
         font-weight: bolder;
         text-shadow: #000000 0.1em 0.1em 0.2em;
@@ -505,7 +505,7 @@ footer {
 @media screen and (max-width: 768px) {
   main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .carousel-text {
     font-size: 30px;
-    margin-bottom: 40%; }
+    margin-bottom: 50%; }
   main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .descubribtn {
     width: 150px;
     padding: 8px 20px;

@@ -111,39 +111,40 @@ main {
             .carousel-item {
                 position: relative;
                 background-color: rgba(0, 0, 0, 1.5);
-
+        
                 img {
                     opacity: 0.6;
                 }
-
+        
                 .carousel-text {
-                    margin-bottom: 70%;
-                    margin-left: 50%;
+                    margin-bottom: 20px; /* Ajusta el margen inferior del texto */
                     font-weight: bolder;
+                    color: #ffffff;
                     text-shadow: #000000 0.1em 0.1em 0.2em;
-                    transform: translate(-50%, -50%);
                     font-size: 40px;
-                    // position: absolute;
+                    position: absolute;
+                    top: 30%; /* Alinea verticalmente el texto */
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1; /* Asegura que el texto esté por encima del botón */
                 }
-
+        
                 .button {
                     position: absolute;
-                    bottom: 0px;
+                    bottom: 10%; /* Ajusta la posición vertical del botón */
                     left: 50%;
                     transform: translateX(-50%);
-                    text-decoration-color: black;
-                    margin-bottom: 15%;
+                    z-index: 1; /* Asegura que el botón esté por debajo del texto */
                 }
             }
         }
-
+        
         .descubribtn {
-            border-radius: 20px;
+            border-radius: 40px;
+            margin-bottom: 30%;
             background-color: white;
             color: #7b421b; /* Cambia el color del texto aquí */
             border: none;
-            padding: 10px 20px;
-            // width: 170px;
             font-size: 18px;
             font-weight: bolder;
             cursor: pointer;
@@ -152,15 +153,12 @@ main {
         .descubribtn:hover {
             background-color: #f0f0f0;
             /* Puedes agregar estilos adicionales para el estado hover del botón aquí */
-        }     
+        } 
+             
 
     }
 
     /* Index -Ambientaciones */
-
-
-
-
 
     .ambientaciones {
         .title {
@@ -229,76 +227,13 @@ main {
         }
     }
     
-    
-
-    // .ambientaciones {
-    //     .title {
-    //         color: #7b421b;
-    //         margin-top: 2%;
-    //     }
-      
-    //     .card-group {
-    //         gap: 20px;
-    //         padding: 2% 15%;
-    
-    //         .card {
-    //             position: relative; // Agrega posición relativa para posicionar el botón
-    //             overflow: hidden; // Oculta el borde entre la tarjeta y el botón
-    //             border-radius: 10px; // Agrega bordes redondeados a las tarjetas
-    //             transition: box-shadow 0.3s ease; // Agrega transición al sombreado
-
-    //             &:hover {
-    //                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Sombreado al pasar el mouse
-    //             }
-    
-    //             img {
-    //                 height: 500px;
-    //                 opacity: 1;
-    //             }
-    
-    //             .card-body {
-    //                 display: flex;
-    //                 justify-content: center;
-    //                 align-items: center;
-    //                 // background-color: #FAA51A;
-    //                 margin-top: 20px; // Agrega margen para separar el botón
-                    
-    //             }
-    
-    //             .btn {
-    //                 position: absolute; // Posiciona el botón
-    //                 bottom: 0; // Lo coloca en la parte inferior de la tarjeta
-    //                 left: 0; // Lo alinea a la izquierda
-    //                 width: 100%; // Ocupa todo el ancho de la tarjeta
-    //                 padding: 10px; // Añade relleno al botón
-    //                 background-color: #faa51a; // Color de fondo del botón
-    //                 color: white; // Color del texto del botón
-    //                 border: none; // Elimina el borde del botón
-    //                 border-radius: 0 0 10px 10px; // Agrega bordes redondeados solo en la parte inferior
-    //                 transition: background-color 0.3s ease; // Agrega transición al color de fondo del botón
-    //                 cursor: pointer; // Cambia el cursor al pasar el mouse
-    //                 &:hover {
-    //                     background-color: #593527; // Cambia el color de fondo al pasar el mouse
-    //                 }
-    //             }
-
-    //         }
-    //     }
-    
-    //     .divider {
-    //         border-top: 2px solid #7b421b;
-    //         width: 70%;
-    //         margin: 10px auto;
-    //     }
-    // }
-    
-
-
 
     /* Index - Deco */
     .section_deco {
         background-color: #CF5D20;
-
+        max-width: 90%;
+        // position: relative;
+            margin: 0 auto;
         .card_deco {
             display: flex;
             justify-content: center;
@@ -320,10 +255,14 @@ main {
             justify-content: center;
             color: #fff;
             margin-left: 5%;
+            // font-weight: bolder;
+
 
             .p_deco {
                 padding: 20% 5%;
                 color: #fff;
+                text-align: justify;
+                justify-content: center;
             }
 
             .card_deco_btn {
@@ -340,6 +279,7 @@ main {
     }
 
     /* Index - Proyectos a medida */
+   
     .card_proyectos {
         display: flex;
         justify-content: center;

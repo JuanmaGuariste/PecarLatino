@@ -1,0 +1,71 @@
+@import "../base/variables";
+
+/*-----------------------------FOOTER---------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    grid-area: footer;
+    background-color: #CF5D20;
+    color: #EDEDED;
+
+    .grupo-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 5%;
+
+        .box {
+            display: flex;
+            align-items: center;
+            padding: 20px;           
+
+            a {
+                .img_box {
+                    width: 150px;
+                }
+            }
+        }
+
+        .box_1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 5px;
+
+            .showroom,
+            p {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 5px;
+                color: #fff;
+                text-align: center;
+            }
+
+            .redes a {
+                padding: 0px 20px;
+                justify-content: space-evenly;
+
+                img {
+                    opacity: 1;
+                }
+            }
+
+            .servicios a {
+                text-decoration: none;
+                color: #EDEDED;
+            }
+
+            .contacto {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: #EDEDED;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "../base/variables";
+
+/*----------------HEADER----------------------*/
+header {
+  grid-area: header;
+  color: #412C25;
+  font-size: 14px;
+
+  .container-fluid {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+  }
+
+  .navbar-brand {
+    .logoheader {
+      width: 150px;
+      height: auto;
+      border-radius: 50px;
+      opacity: 1;
+      background-color: #ffffff;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-grow: 1;
+
+    .nav-item {
+      flex-grow: 1;
+      margin-left: 5%;
+
+      a {
+        font-weight: bolder;
+        color: #000000;
+      }
+    }
+  }
+
+  a.nav-link:hover {
+    color: #FAA51A;
+  }
+
+  a.dropdown-item:hover {
+    background-color: #fa861a;
+  }
+}

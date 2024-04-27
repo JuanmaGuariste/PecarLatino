@@ -1,0 +1,587 @@
+@import "../base/variables";
+
+/* Estilos del Main */
+
+main {
+    /**----------------------------------------MAIN INDEX------------------------ **/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    grid-area: main;
+    background-color: #ffff;
+    margin: 0 auto;
+
+    .hero {
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            // height: 43rem;
+            max-width: 90%;
+            position: relative;
+            margin: 0 auto;
+            // background-color: #FEF9F5;
+
+            .carousel-item {
+                background-color: rgba(0, 0, 0, 1.5);
+                align-items: center;
+                /* Centra horizontalmente */
+                justify-content: center;
+
+                .heroH1 {
+                    color: #e4e4e4;
+                    font-size: 70px;
+                    font-weight: 500;
+                    left: 12%;
+                    position: absolute;
+                    text-align: left;
+                    top: 25%;
+                    z-index: 1001;
+                    text-shadow: #000000 0.1em 0.1em 0.2em;
+                }
+
+                img {
+                    opacity: 0.5;
+                    width: auto;
+                    height: 100vh;
+                    /* Ajusta el alto de la imagen */
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .sobrenosotros {
+        padding: 5% 15%;
+        margin-top: 2%;
+        background-color: #F5EAD4;
+        gap: 20px;
+        height: 400px;
+        margin-left: 5%;
+        margin-right: 5%;
+        // width: 90%;
+        p {
+            color: #7b421b;
+            font-weight: bolder;
+            text-align: justify;
+        }
+
+        .title {
+            color: #7b421b;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .conocenosbtn {
+                border-radius: 14px;
+                background-color: #7b421b;
+                color: #F5EAD4;
+                font-size: 18px;
+                font-weight: 400;
+                text-decoration: none;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    /* Index - Muebles */
+    .muebles {
+        margin-top: 2%;
+        padding: 3% 15%;
+
+        h2 {
+            margin-bottom: 3%;
+            color: #7b421b;
+        }
+
+        .carousel-inner {
+            .carousel-item {
+                position: relative;
+                background-color: rgba(0, 0, 0, 1.5);
+
+                img {
+                    /* Estilos de la imagen */
+                    opacity: 0.6;
+                    // background-color: rgba(0, 0, 0, 1.5);
+
+
+                }
+
+                .carousel-text {
+                    // position: absolute;
+                    // top: -350px;
+                    // left: 50%;
+                    margin-bottom: 55%;
+                    margin-left: 50%;
+                    // bottom: 350px;
+                    font-weight: bolder;
+                    text-shadow: #000000 0.1em 0.1em 0.2em;
+                    transform: translate(-50%, -50%);
+                    // color: white;
+                    font-size: 50px;
+                    // opacity: 0.8;
+                    /* Otros estilos para el texto */
+                }
+
+                .button {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-decoration-color: black;
+                    margin-bottom: 15%;
+
+                }
+            }
+        }
+
+
+
+
+        // .descubribtn {
+        //     border-radius: 20px;
+        //     /* Hacer el botón redondeado */
+        //     background-color: white;
+        //     /* Color de fondo blanco */
+        //     color: #000;
+        //     /* Color del texto */
+        //     border: none;
+        //     padding: 10px 20px;
+        //     font-size: 18px;
+        // }
+
+        .descubribtn {
+            border-radius: 20px;
+            background-color: white;
+            color: rgb(0, 0, 0); /* Cambia el color del texto aquí */
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        
+        .descubribtn:hover {
+            background-color: #f0f0f0;
+            /* Puedes agregar estilos adicionales para el estado hover del botón aquí */
+        }
+        
+        
+
+        .descubribtn:hover {
+            background-color: #f0f0f0;
+            /* Cambiar el color de fondo al pasar el mouse */
+        }
+
+    }
+
+    // .muebles {
+    //     // padding: 5% 15%;
+    //     margin-top: 2%;
+    //     padding: 3% 15%;
+
+    //     h2 {
+    //         margin-bottom: 3%;
+    //         color: #7b421b;
+    //     }
+
+    //     .carousel-inner {
+    //         .carousel-item {
+    //             position: relative;
+
+    //             .carousel-text { 
+    //             }
+
+    //             .button {
+    //                 position: absolute;
+    //                 bottom: 20px;
+    //                 left: 50%;
+    //                 transform: translateX(-50%);
+    //             }
+    //         }
+    //     }
+
+
+
+    //     .descubribtn {
+    //         border-radius: 20px;
+    //         /* Hacer el botón redondeado */
+    //         background-color: white;
+    //         /* Color de fondo blanco */
+    //         color: #000;
+    //         /* Color del texto */
+    //         border: none;
+    //         padding: 10px 20px;
+    //         font-size: 18px;
+    //     }
+
+    //     .descubribtn:hover {
+    //         background-color: #f0f0f0;
+    //         /* Cambiar el color de fondo al pasar el mouse */
+    //     }
+
+    // }
+
+    /* Index -Espacios */
+    .card-group {
+        gap: 20px;
+        padding: 5% 15%;
+
+        .card img {
+            height: 500px;
+            opacity: 1;
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FAA51A;
+        }
+    }
+
+    /* Index - Deco */
+    .section_deco {
+        background-color: #CF5D20;
+
+        .card_deco {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 2%;
+            margin: 2% 15%;
+        }
+
+        .img_deco {
+            img {
+                width: 400px;
+                height: 500px;
+                opacity: 1;
+            }
+        }
+
+        .text_deco {
+            text-align: center;
+            justify-content: center;
+            color: #fff;
+            margin-left: 5%;
+
+            .p_deco {
+                padding: 20% 5%;
+                color: #fff;
+            }
+
+            .card_deco_btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #412C25;
+                background-color: #F5EAD4;
+                padding: 5px;
+                width: 200px;
+                margin-left: 35%;
+            }
+        }
+    }
+
+    /* Index - Proyectos a medida */
+    .card_proyectos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 2%;
+        margin: 2% 15%;
+    }
+
+    .text_proyectos {
+        text-align: center;
+        justify-content: center;
+        color: #412C25;
+        margin-right: 5%;
+
+        h3 {
+            color: #7B421B;
+        }
+
+        .p_proyectos {
+            padding: 20% 5%;
+            color: #412C25;
+        }
+
+        .card_proyectos_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: #7B421B;
+            padding: 5px;
+            width: 200px;
+            margin-left: 30%;
+
+        }
+    }
+
+    .img_proyectos {
+        img {
+            width: 400px;
+            height: 500px;
+            opacity: 1;
+        }
+    }
+
+    /* Index - Café */
+    .img-dos {
+        background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d");
+    }
+
+    /**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/
+
+    .principal_sobre_nosotros {
+        color: black;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .imagenes_sobre_nosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+
+        .sobre_nosotros_img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+
+            img {
+                max-width: 700px;
+                height: auto;
+            }
+        }
+
+        .bienvenidos-text {
+            text-align: justify;
+            width: 80%;
+            max-width: 1200px;
+
+            p {
+                color: #000000;
+                // font-weight: bold;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    /**----------------------------------------MAIN MUEBLES------------------------ **/
+    .principal_muebles {
+        color: black;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+
+    .seccion_muebles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .imagen_mueble_principal {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: auto;
+            margin-bottom: 100px;
+            align-items: center;
+
+            img {
+                height: auto;
+                width: 80%;
+            }
+        }
+    }
+
+    .grupo_muebles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+        margin-bottom: 30px;
+
+        .muebles_img {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            width: 80%;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: box-shadow 0.3s ease;
+
+                img {
+                    width: 100%;
+                    max-width: 600px;
+                    height: 900px;
+                    object-fit: cover;
+                }
+
+                .mueble-text {
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 16px;
+                    color: #333;
+                }
+
+                .mueble-description {
+                    display: none;
+                }
+            }
+
+            div:hover {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            }
+
+        }
+
+    }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    display: flex;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+
+    .modal-container {
+        display: flex;
+    }
+
+    .modal-image {
+        flex: 1;
+        max-width: 50%;
+        padding: 10px;
+    }
+
+    .modal-text {
+        flex: 1;
+        max-width: 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-text p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        height: 400px;
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+}
+
+.modal,
+.modal-content {
+    transition: 0.3s;
+}
+
+
+/**----------------------------------------LOGO FLOTANTE------------------------ **/
+
+// .fixed {
+//     position: fixed;
+//     right: 4%;
+//     bottom: 20%;
+//     border-radius: 100%;
+//     box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+//     -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+//     -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center; 
+// }
+
+.fixed {
+    position: fixed;
+    right: 4%;
+    bottom: 15%;
+}
+
+.fixed a {
+    display: block;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 100px;
+}
+
+.fixed a:hover {
+    background-color: #128c7e;
+}
+
+.fixed img {
+    width: 70px;
+    height: auto;
+}

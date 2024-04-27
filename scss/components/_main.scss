@@ -55,45 +55,49 @@ main {
         }
     }
 
+
     .sobrenosotros {
         padding: 5% 15%;
         margin-top: 2%;
         background-color: #F5EAD4;
         gap: 20px;
-        height: 400px;
+        height: auto; /* En lugar de una altura fija, usa auto para que se ajuste al contenido */
         margin-left: 5%;
         margin-right: 5%;
-        // width: 90%;
+        /* width: 90%; */ /* No es necesario si usas margen izquierdo y derecho */
+        
         p {
             color: #7b421b;
             font-weight: bolder;
             text-align: justify;
         }
-
+    
         .title {
             color: #7b421b;
         }
-
-        .button {
+    
+        .button-container {
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            .conocenosbtn {
-                border-radius: 14px;
-                background-color: #7b421b;
-                color: #F5EAD4;
-                font-size: 18px;
-                font-weight: 400;
-                text-decoration: none;
-                padding: 10px 20px;
-                border: none;
-                cursor: pointer;
-            }
+        }
+    
+        .conocenosbtn {
+            border-radius: 14px;
+            background-color: #7b421b;
+            color: #F5EAD4;
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
         }
     }
 
     /* Index - Muebles */
+    
     .muebles {
         margin-top: 2%;
         padding: 3% 15%;
@@ -109,27 +113,17 @@ main {
                 background-color: rgba(0, 0, 0, 1.5);
 
                 img {
-                    /* Estilos de la imagen */
                     opacity: 0.6;
-                    // background-color: rgba(0, 0, 0, 1.5);
-
-
                 }
 
                 .carousel-text {
-                    // position: absolute;
-                    // top: -350px;
-                    // left: 50%;
-                    margin-bottom: 55%;
+                    margin-bottom: 45%;
                     margin-left: 50%;
-                    // bottom: 350px;
                     font-weight: bolder;
                     text-shadow: #000000 0.1em 0.1em 0.2em;
                     transform: translate(-50%, -50%);
-                    // color: white;
-                    font-size: 50px;
-                    // opacity: 0.8;
-                    /* Otros estilos para el texto */
+                    font-size: 40px;
+                    // position: absolute;
                 }
 
                 .button {
@@ -139,32 +133,17 @@ main {
                     transform: translateX(-50%);
                     text-decoration-color: black;
                     margin-bottom: 15%;
-
                 }
             }
         }
 
-
-
-
-        // .descubribtn {
-        //     border-radius: 20px;
-        //     /* Hacer el botón redondeado */
-        //     background-color: white;
-        //     /* Color de fondo blanco */
-        //     color: #000;
-        //     /* Color del texto */
-        //     border: none;
-        //     padding: 10px 20px;
-        //     font-size: 18px;
-        // }
-
         .descubribtn {
             border-radius: 20px;
             background-color: white;
-            color: rgb(0, 0, 0); /* Cambia el color del texto aquí */
+            color: #7b421b; /* Cambia el color del texto aquí */
             border: none;
             padding: 10px 20px;
+            // width: 170px;
             font-size: 18px;
             font-weight: bolder;
             cursor: pointer;
@@ -173,81 +152,148 @@ main {
         .descubribtn:hover {
             background-color: #f0f0f0;
             /* Puedes agregar estilos adicionales para el estado hover del botón aquí */
-        }
-        
-        
-
-        .descubribtn:hover {
-            background-color: #f0f0f0;
-            /* Cambiar el color de fondo al pasar el mouse */
-        }
+        }     
 
     }
 
-    // .muebles {
-    //     // padding: 5% 15%;
-    //     margin-top: 2%;
-    //     padding: 3% 15%;
+    /* Index -Ambientaciones */
 
-    //     h2 {
-    //         margin-bottom: 3%;
+
+
+
+
+    .ambientaciones {
+        .title {
+            color: #7b421b;
+            margin-top: 2%;
+        }
+    
+        .card-group-ambientaciones {
+            gap: 20px;
+            padding: 2% 5%; // Ajusta el padding para pantallas más pequeñas
+            width: 80%;
+            margin: 0 auto; // Centra horizontalmente las tarjetas
+            display: flex;
+            justify-content: center; // Centra verticalmente las tarjetas
+            flex-wrap: wrap; // Envuelve las tarjetas si no hay suficiente espacio horizontal
+    
+            .card {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                transition: box-shadow 0.3s ease;
+                flex-basis: calc(33.333% - 20px); // Ajusta el ancho de las tarjetas para pantallas más pequeñas
+                margin-bottom: 20px; // Añade margen inferior para separar las tarjetas
+    
+                &:hover {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                }
+    
+                img {
+                    max-width: 100%; // Limita el tamaño máximo de la imagen
+                    height: auto; // Permite que la altura se ajuste automáticamente
+                    opacity: 1;
+                }
+    
+                .card-body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;             
+                }
+    
+                .btn {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #faa51a;
+                    color: white;
+                    border: none;
+                    border-radius: 0 0 10px 10px;
+                    transition: background-color 0.3s ease;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: #593527;
+                    }
+                }
+            }
+        }
+    
+        .divider {
+            border-top: 2px solid #7b421b;
+            width: 70%;
+            margin: 10px auto;
+        }
+    }
+    
+    
+
+    // .ambientaciones {
+    //     .title {
     //         color: #7b421b;
+    //         margin-top: 2%;
     //     }
+      
+    //     .card-group {
+    //         gap: 20px;
+    //         padding: 2% 15%;
+    
+    //         .card {
+    //             position: relative; // Agrega posición relativa para posicionar el botón
+    //             overflow: hidden; // Oculta el borde entre la tarjeta y el botón
+    //             border-radius: 10px; // Agrega bordes redondeados a las tarjetas
+    //             transition: box-shadow 0.3s ease; // Agrega transición al sombreado
 
-    //     .carousel-inner {
-    //         .carousel-item {
-    //             position: relative;
-
-    //             .carousel-text { 
+    //             &:hover {
+    //                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Sombreado al pasar el mouse
+    //             }
+    
+    //             img {
+    //                 height: 500px;
+    //                 opacity: 1;
+    //             }
+    
+    //             .card-body {
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 align-items: center;
+    //                 // background-color: #FAA51A;
+    //                 margin-top: 20px; // Agrega margen para separar el botón
+                    
+    //             }
+    
+    //             .btn {
+    //                 position: absolute; // Posiciona el botón
+    //                 bottom: 0; // Lo coloca en la parte inferior de la tarjeta
+    //                 left: 0; // Lo alinea a la izquierda
+    //                 width: 100%; // Ocupa todo el ancho de la tarjeta
+    //                 padding: 10px; // Añade relleno al botón
+    //                 background-color: #faa51a; // Color de fondo del botón
+    //                 color: white; // Color del texto del botón
+    //                 border: none; // Elimina el borde del botón
+    //                 border-radius: 0 0 10px 10px; // Agrega bordes redondeados solo en la parte inferior
+    //                 transition: background-color 0.3s ease; // Agrega transición al color de fondo del botón
+    //                 cursor: pointer; // Cambia el cursor al pasar el mouse
+    //                 &:hover {
+    //                     background-color: #593527; // Cambia el color de fondo al pasar el mouse
+    //                 }
     //             }
 
-    //             .button {
-    //                 position: absolute;
-    //                 bottom: 20px;
-    //                 left: 50%;
-    //                 transform: translateX(-50%);
-    //             }
     //         }
     //     }
-
-
-
-    //     .descubribtn {
-    //         border-radius: 20px;
-    //         /* Hacer el botón redondeado */
-    //         background-color: white;
-    //         /* Color de fondo blanco */
-    //         color: #000;
-    //         /* Color del texto */
-    //         border: none;
-    //         padding: 10px 20px;
-    //         font-size: 18px;
+    
+    //     .divider {
+    //         border-top: 2px solid #7b421b;
+    //         width: 70%;
+    //         margin: 10px auto;
     //     }
-
-    //     .descubribtn:hover {
-    //         background-color: #f0f0f0;
-    //         /* Cambiar el color de fondo al pasar el mouse */
-    //     }
-
     // }
+    
 
-    /* Index -Espacios */
-    .card-group {
-        gap: 20px;
-        padding: 5% 15%;
 
-        .card img {
-            height: 500px;
-            opacity: 1;
-        }
-
-        .card-body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #FAA51A;
-        }
-    }
 
     /* Index - Deco */
     .section_deco {

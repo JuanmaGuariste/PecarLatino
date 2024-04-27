@@ -1,1 +1,32 @@
 /*--------------------------------MEDIA QUERIES--------------------*/
+@media screen and (max-width: 768px) {
+    main{
+
+        .muebles{
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        .carousel-caption{
+                            .carousel-text{
+                                font-size: 30px;
+                                margin-bottom: 40%;
+
+                            }
+                            .descubribtn {                               
+                                width: 150px;
+                                padding: 8px 20px;
+                                font-size: 15px;                                
+                            }
+                        }
+                    } 
+
+                }
+            }
+        }
+//-------------------Ambientaciones-------------------
+        .card-group-ambientaciones {
+            flex-direction: column;
+        }
+    }
+
+}

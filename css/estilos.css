@@ -73,7 +73,7 @@ main {
   background-color: #ffff;
   margin: 0 auto;
   /* Index - Muebles */
-  /* Index -Espacios */
+  /* Index -Ambientaciones */
   /* Index - Deco */
   /* Index - Proyectos a medida */
   /* Index - Café */
@@ -114,30 +114,33 @@ main {
     margin-top: 2%;
     background-color: #F5EAD4;
     gap: 20px;
-    height: 400px;
+    height: auto;
+    /* En lugar de una altura fija, usa auto para que se ajuste al contenido */
     margin-left: 5%;
-    margin-right: 5%; }
+    margin-right: 5%;
+    /* width: 90%; */
+    /* No es necesario si usas margen izquierdo y derecho */ }
     main .sobrenosotros p {
       color: #7b421b;
       font-weight: bolder;
       text-align: justify; }
     main .sobrenosotros .title {
       color: #7b421b; }
-    main .sobrenosotros .button {
+    main .sobrenosotros .button-container {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center; }
-      main .sobrenosotros .button .conocenosbtn {
-        border-radius: 14px;
-        background-color: #7b421b;
-        color: #F5EAD4;
-        font-size: 18px;
-        font-weight: 400;
-        text-decoration: none;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer; }
+    main .sobrenosotros .conocenosbtn {
+      border-radius: 14px;
+      background-color: #7b421b;
+      color: #F5EAD4;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer; }
   main .muebles {
     margin-top: 2%;
     padding: 3% 15%; }
@@ -148,16 +151,14 @@ main {
       position: relative;
       background-color: black; }
       main .muebles .carousel-inner .carousel-item img {
-        /* Estilos de la imagen */
         opacity: 0.6; }
       main .muebles .carousel-inner .carousel-item .carousel-text {
-        margin-bottom: 55%;
+        margin-bottom: 45%;
         margin-left: 50%;
         font-weight: bolder;
         text-shadow: #000000 0.1em 0.1em 0.2em;
         transform: translate(-50%, -50%);
-        font-size: 50px;
-        /* Otros estilos para el texto */ }
+        font-size: 40px; }
       main .muebles .carousel-inner .carousel-item .button {
         position: absolute;
         bottom: 0px;
@@ -168,7 +169,7 @@ main {
     main .muebles .descubribtn {
       border-radius: 20px;
       background-color: white;
-      color: black;
+      color: #7b421b;
       /* Cambia el color del texto aquí */
       border: none;
       padding: 10px 20px;
@@ -178,20 +179,53 @@ main {
     main .muebles .descubribtn:hover {
       background-color: #f0f0f0;
       /* Puedes agregar estilos adicionales para el estado hover del botón aquí */ }
-    main .muebles .descubribtn:hover {
-      background-color: #f0f0f0;
-      /* Cambiar el color de fondo al pasar el mouse */ }
-  main .card-group {
+  main .ambientaciones .title {
+    color: #7b421b;
+    margin-top: 2%; }
+  main .ambientaciones .card-group-ambientaciones {
     gap: 20px;
-    padding: 5% 15%; }
-    main .card-group .card img {
-      height: 500px;
-      opacity: 1; }
-    main .card-group .card-body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #FAA51A; }
+    padding: 2% 5%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    main .ambientaciones .card-group-ambientaciones .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: box-shadow 0.3s ease;
+      flex-basis: calc(33.333% - 20px);
+      margin-bottom: 20px; }
+      main .ambientaciones .card-group-ambientaciones .card:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+      main .ambientaciones .card-group-ambientaciones .card img {
+        max-width: 100%;
+        height: auto;
+        opacity: 1; }
+      main .ambientaciones .card-group-ambientaciones .card .card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; }
+      main .ambientaciones .card-group-ambientaciones .card .btn {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #faa51a;
+        color: white;
+        border: none;
+        border-radius: 0 0 10px 10px;
+        transition: background-color 0.3s ease;
+        cursor: pointer; }
+        main .ambientaciones .card-group-ambientaciones .card .btn:hover {
+          background-color: #593527; }
+  main .ambientaciones .divider {
+    border-top: 2px solid #7b421b;
+    width: 70%;
+    margin: 10px auto; }
   main .section_deco {
     background-color: #CF5D20; }
     main .section_deco .card_deco {
@@ -468,3 +502,13 @@ footer {
           color: #EDEDED; }
 
 /*--------------------------------MEDIA QUERIES--------------------*/
+@media screen and (max-width: 768px) {
+  main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .carousel-text {
+    font-size: 30px;
+    margin-bottom: 40%; }
+  main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .descubribtn {
+    width: 150px;
+    padding: 8px 20px;
+    font-size: 15px; }
+  main .card-group-ambientaciones {
+    flex-direction: column; } }

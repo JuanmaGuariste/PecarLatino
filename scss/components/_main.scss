@@ -61,28 +61,30 @@ main {
         margin-top: 2%;
         background-color: #F5EAD4;
         gap: 20px;
-        height: auto; /* En lugar de una altura fija, usa auto para que se ajuste al contenido */
+        height: auto;
+        /* En lugar de una altura fija, usa auto para que se ajuste al contenido */
         margin-left: 5%;
         margin-right: 5%;
-        /* width: 90%; */ /* No es necesario si usas margen izquierdo y derecho */
-        
+        /* width: 90%; */
+        /* No es necesario si usas margen izquierdo y derecho */
+
         p {
             color: #7b421b;
             font-weight: bolder;
             text-align: justify;
         }
-    
+
         .title {
             color: #7b421b;
         }
-    
+
         .button-container {
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
-    
+
         .conocenosbtn {
             border-radius: 14px;
             background-color: #7b421b;
@@ -97,7 +99,7 @@ main {
     }
 
     /* Index - Muebles */
-    
+
     .muebles {
         margin-top: 2%;
         padding: 3% 15%;
@@ -107,54 +109,60 @@ main {
             color: #7b421b;
         }
 
-        .carousel-inner {           
+        .carousel-inner {
             .carousel-item {
                 position: relative;
                 background-color: rgba(0, 0, 0, 1.5);
-        
+
                 img {
                     opacity: 0.6;
                 }
-        
+
                 .carousel-text {
-                    margin-bottom: 20px; /* Ajusta el margen inferior del texto */
+                    margin-bottom: 20px;
+                    /* Ajusta el margen inferior del texto */
                     font-weight: bolder;
                     color: #ffffff;
                     text-shadow: #000000 0.1em 0.1em 0.2em;
                     font-size: 40px;
                     position: absolute;
-                    top: 30%; /* Alinea verticalmente el texto */
+                    top: 30%;
+                    /* Alinea verticalmente el texto */
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    z-index: 1; /* Asegura que el texto esté por encima del botón */
+                    z-index: 1;
+                    /* Asegura que el texto esté por encima del botón */
                 }
-        
+
                 .button {
                     position: absolute;
-                    bottom: 10%; /* Ajusta la posición vertical del botón */
+                    bottom: 10%;
+                    /* Ajusta la posición vertical del botón */
                     left: 50%;
                     transform: translateX(-50%);
-                    z-index: 1; /* Asegura que el botón esté por debajo del texto */
+                    z-index: 1;
+                    /* Asegura que el botón esté por debajo del texto */
                 }
             }
         }
-        
+
         .descubribtn {
             border-radius: 40px;
             margin-bottom: 30%;
             background-color: white;
-            color: #7b421b; /* Cambia el color del texto aquí */
+            color: #7b421b;
+            /* Cambia el color del texto aquí */
             border: none;
             font-size: 18px;
             font-weight: bolder;
             cursor: pointer;
         }
-        
+
         .descubribtn:hover {
             background-color: #f0f0f0;
             /* Puedes agregar estilos adicionales para el estado hover del botón aquí */
-        } 
-             
+        }
+
 
     }
 
@@ -165,7 +173,7 @@ main {
             color: #7b421b;
             margin-top: 2%;
         }
-    
+
         .card-group-ambientaciones {
             gap: 20px;
             padding: 2% 5%; // Ajusta el padding para pantallas más pequeñas
@@ -174,7 +182,7 @@ main {
             display: flex;
             justify-content: center; // Centra verticalmente las tarjetas
             flex-wrap: wrap; // Envuelve las tarjetas si no hay suficiente espacio horizontal
-    
+
             .card {
                 position: relative;
                 overflow: hidden;
@@ -182,24 +190,24 @@ main {
                 transition: box-shadow 0.3s ease;
                 flex-basis: calc(33.333% - 20px); // Ajusta el ancho de las tarjetas para pantallas más pequeñas
                 margin-bottom: 20px; // Añade margen inferior para separar las tarjetas
-    
+
                 &:hover {
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 }
-    
+
                 img {
                     max-width: 100%; // Limita el tamaño máximo de la imagen
                     height: auto; // Permite que la altura se ajuste automáticamente
                     opacity: 1;
                 }
-    
+
                 .card-body {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-top: 20px;             
+                    margin-top: 20px;
                 }
-    
+
                 .btn {
                     position: absolute;
                     bottom: 0;
@@ -212,74 +220,89 @@ main {
                     border-radius: 0 0 10px 10px;
                     transition: background-color 0.3s ease;
                     cursor: pointer;
-    
+
                     &:hover {
                         background-color: #593527;
                     }
                 }
             }
         }
-    
+
         .divider {
             border-top: 2px solid #7b421b;
             width: 70%;
             margin: 10px auto;
         }
     }
-    
+
 
     /* Index - Deco */
     .section_deco {
         background-color: #CF5D20;
         max-width: 90%;
-        // position: relative;
-            margin: 0 auto;
-        .card_deco {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            padding: 2%;
-            margin: 2% 15%;
-        }
+        margin: 0 auto;
+    }
 
-        .img_deco {
-            img {
-                width: 400px;
-                height: 500px;
-                opacity: 1;
-            }
-        }
+    .card_deco {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .text_deco {
-            text-align: center;
-            justify-content: center;
-            color: #fff;
-            margin-left: 5%;
-            // font-weight: bolder;
+    .img_deco {
+        flex: 1 0 50%;
+        width: 50%;
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
+    .img_deco img {
+        width: 100%;
+        height: auto;
+    }
 
-            .p_deco {
-                padding: 20% 5%;
-                color: #fff;
-                text-align: justify;
-                justify-content: center;
-            }
+    .text_deco {
+        flex: 1 0 50%;
+        padding: 2%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
-            .card_deco_btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #412C25;
-                background-color: #F5EAD4;
-                padding: 5px;
-                width: 200px;
-                margin-left: 35%;
-            }
-        }
+    .text_deco h3 {
+        color: #fff;
+        margin-bottom: 15%;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 10%;
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .text_deco p.p_deco {
+        color: #fff;
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 80%;
+        line-height: 1.6;
+    }
+
+    .card_deco_btn {
+        border-radius: 40px;
+        margin-top: 20%;
+        background-color: white;
+        color: #7b421b;
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .card_deco_btn:hover {
+        background-color: #f0f0f0;
     }
 
     /* Index - Proyectos a medida */
-   
+
     .card_proyectos {
         display: flex;
         justify-content: center;

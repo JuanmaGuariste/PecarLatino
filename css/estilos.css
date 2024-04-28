@@ -238,35 +238,48 @@ main {
     background-color: #CF5D20;
     max-width: 90%;
     margin: 0 auto; }
-    main .section_deco .card_deco {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      padding: 2%;
-      margin: 2% 15%; }
-    main .section_deco .img_deco img {
-      width: 400px;
-      height: 500px;
-      opacity: 1; }
-    main .section_deco .text_deco {
-      text-align: center;
-      justify-content: center;
-      color: #fff;
-      margin-left: 5%; }
-      main .section_deco .text_deco .p_deco {
-        padding: 20% 5%;
-        color: #fff;
-        text-align: justify;
-        justify-content: center; }
-      main .section_deco .text_deco .card_deco_btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #412C25;
-        background-color: #F5EAD4;
-        padding: 5px;
-        width: 200px;
-        margin-left: 35%; }
+  main .card_deco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  main .img_deco {
+    flex: 1 0 50%;
+    width: 50%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+  main .img_deco img {
+    width: 100%;
+    height: auto; }
+  main .text_deco {
+    flex: 1 0 50%;
+    padding: 2%;
+    margin-bottom: 20px;
+    text-align: center; }
+  main .text_deco h3 {
+    color: #fff;
+    margin-bottom: 15%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10%;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
+  main .text_deco p.p_deco {
+    color: #fff;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 80%;
+    line-height: 1.6; }
+  main .card_deco_btn {
+    border-radius: 40px;
+    margin-top: 20%;
+    background-color: white;
+    color: #7b421b;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer; }
+  main .card_deco_btn:hover {
+    background-color: #f0f0f0; }
   main .card_proyectos {
     display: flex;
     justify-content: center;
@@ -522,4 +535,34 @@ footer {
     padding: 8px 20px;
     font-size: 15px; }
   main .card-group-ambientaciones {
-    flex-direction: column; } }
+    flex-direction: column; }
+  main .section_deco .card_deco {
+    flex-direction: column; }
+    main .section_deco .card_deco .img_deco {
+      margin-top: 10%; }
+    main .section_deco .card_deco .text_deco {
+      margin-bottom: 0; }
+      main .section_deco .card_deco .text_deco h3 {
+        font-size: 24px; }
+      main .section_deco .card_deco .text_deco .p_deco {
+        font-size: 16px;
+        width: 75%;
+        margin-bottom: 5%; }
+      main .section_deco .card_deco .text_deco .card_deco_btn {
+        font-size: 16px;
+        margin-bottom: 5%; } }
+
+@media screen and (max-width: 1170px) {
+  main .section_deco .card_deco {
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center; }
+    main .section_deco .card_deco .text_deco h3 {
+      margin-bottom: 4%;
+      font-size: 25px; }
+    main .section_deco .card_deco .text_deco .p_deco {
+      width: 90%;
+      font-size: 14px; }
+    main .section_deco .card_deco .text_deco .card_deco_btn {
+      margin-top: 4%;
+      font-size: 12px; } }

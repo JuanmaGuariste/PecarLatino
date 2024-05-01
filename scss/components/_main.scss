@@ -20,16 +20,13 @@ main {
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
-            // height: 43rem;
             max-width: 90%;
             position: relative;
             margin: 0 auto;
-            // background-color: #FEF9F5;
 
             .carousel-item {
                 background-color: rgba(0, 0, 0, 1.5);
                 align-items: center;
-                /* Centra horizontalmente */
                 justify-content: center;
 
                 .heroH1 {
@@ -48,13 +45,11 @@ main {
                     opacity: 0.5;
                     width: auto;
                     height: 100vh;
-                    /* Ajusta el alto de la imagen */
                     object-fit: cover;
                 }
             }
         }
     }
-
 
     .sobrenosotros {
         padding: 5% 15%;
@@ -62,20 +57,22 @@ main {
         background-color: #F5EAD4;
         gap: 20px;
         height: auto;
-        /* En lugar de una altura fija, usa auto para que se ajuste al contenido */
         margin-left: 5%;
         margin-right: 5%;
-        /* width: 90%; */
-        /* No es necesario si usas margen izquierdo y derecho */
-
-        p {
-            color: #7b421b;
-            font-weight: bolder;
-            text-align: justify;
-        }
 
         .title {
             color: #7b421b;
+            font-size: 30px;
+            text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .text {
+            p {
+                color: #7b421b;
+                font-weight: bolder;
+                text-align: justify;
+                font-size: 18px;
+            }
         }
 
         .button-container {
@@ -83,23 +80,25 @@ main {
             justify-content: center;
             align-items: center;
             text-align: center;
+
+            .button {
+                .conocenosbtn {
+                    border-radius: 14px;
+                    background-color: #7b421b;
+                    color: #F5EAD4;
+                    font-size: 18px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
         }
 
-        .conocenosbtn {
-            border-radius: 14px;
-            background-color: #7b421b;
-            color: #F5EAD4;
-            font-size: 18px;
-            font-weight: 400;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
     }
 
     /* Index - Muebles */
-
     .muebles {
         margin-top: 2%;
         padding: 3% 15%;
@@ -107,6 +106,7 @@ main {
         h2 {
             margin-bottom: 3%;
             color: #7b421b;
+            text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
         }
 
         .carousel-inner {
@@ -120,28 +120,23 @@ main {
 
                 .carousel-text {
                     margin-bottom: 20px;
-                    /* Ajusta el margen inferior del texto */
                     font-weight: bolder;
                     color: #ffffff;
                     text-shadow: #000000 0.1em 0.1em 0.2em;
                     font-size: 40px;
                     position: absolute;
                     top: 30%;
-                    /* Alinea verticalmente el texto */
                     left: 50%;
                     transform: translate(-50%, -50%);
                     z-index: 1;
-                    /* Asegura que el texto esté por encima del botón */
                 }
 
                 .button {
                     position: absolute;
                     bottom: 10%;
-                    /* Ajusta la posición vertical del botón */
                     left: 50%;
                     transform: translateX(-50%);
                     z-index: 1;
-                    /* Asegura que el botón esté por debajo del texto */
                 }
             }
         }
@@ -151,7 +146,6 @@ main {
             margin-bottom: 30%;
             background-color: white;
             color: #7b421b;
-            /* Cambia el color del texto aquí */
             border: none;
             font-size: 18px;
             font-weight: bolder;
@@ -160,44 +154,41 @@ main {
 
         .descubribtn:hover {
             background-color: #f0f0f0;
-            /* Puedes agregar estilos adicionales para el estado hover del botón aquí */
         }
-
-
     }
 
     /* Index -Ambientaciones */
-
     .ambientaciones {
         .title {
             color: #7b421b;
             margin-top: 2%;
+            text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
         }
 
         .card-group-ambientaciones {
             gap: 20px;
-            padding: 2% 5%; // Ajusta el padding para pantallas más pequeñas
+            padding: 2% 5%;
             width: 80%;
-            margin: 0 auto; // Centra horizontalmente las tarjetas
+            margin: 0 auto;
             display: flex;
-            justify-content: center; // Centra verticalmente las tarjetas
-            flex-wrap: wrap; // Envuelve las tarjetas si no hay suficiente espacio horizontal
+            justify-content: center;
+            flex-wrap: wrap;
 
             .card {
                 position: relative;
                 overflow: hidden;
                 border-radius: 10px;
                 transition: box-shadow 0.3s ease;
-                flex-basis: calc(33.333% - 20px); // Ajusta el ancho de las tarjetas para pantallas más pequeñas
-                margin-bottom: 20px; // Añade margen inferior para separar las tarjetas
+                flex-basis: calc(33.333% - 20px);
+                margin-bottom: 20px;
 
                 &:hover {
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                 }
 
                 img {
-                    max-width: 100%; // Limita el tamaño máximo de la imagen
-                    height: auto; // Permite que la altura se ajuste automáticamente
+                    max-width: 100%;
+                    height: auto;
                     opacity: 1;
                 }
 
@@ -241,109 +232,136 @@ main {
         background-color: #CF5D20;
         max-width: 90%;
         margin: 0 auto;
-    }
 
-    .card_deco {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+        .card_deco {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
 
-    .img_deco {
-        flex: 1 0 50%;
-        width: 50%;
-        position: relative;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+            .img_deco {
+                flex: 1 0 50%;
+                width: 50%;
+                position: relative;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    .img_deco img {
-        width: 100%;
-        height: auto;
-    }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
 
-    .text_deco {
-        flex: 1 0 50%;
-        padding: 2%;
-        margin-bottom: 20px;
-        text-align: center;
-    }
+            .text_deco {
+                flex: 1 0 50%;
+                padding: 2%;
+                margin-bottom: 20px;
+                text-align: center;
 
-    .text_deco h3 {
-        color: #fff;
-        margin-bottom: 15%;
-        font-size: 30px;
-        font-weight: bold;
-        margin-top: 10%;
-        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
-    }
+                h3 {
+                    color: #fff;
+                    margin-bottom: 15%;
+                    font-size: 30px;
+                    font-weight: bold;
+                    margin-top: 10%;
+                    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+                }
 
-    .text_deco p.p_deco {
-        color: #fff;
-        text-align: justify;
-        margin: 0 auto;
-        max-width: 80%;
-        line-height: 1.6;
-    }
+                .p_deco {
+                    color: #fff;
+                    text-align: justify;
+                    margin: 0 auto;
+                    max-width: 80%;
+                    line-height: 1.6;
+                }
 
-    .card_deco_btn {
-        border-radius: 40px;
-        margin-top: 20%;
-        background-color: white;
-        color: #7b421b;
-        border: none;
-        font-size: 20px;
-        font-weight: bolder;
-        cursor: pointer;
-    }
+                .card_deco_btn {
+                    border-radius: 40px;
+                    margin-top: 20%;
+                    background-color: white;
+                    color: #7b421b;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    cursor: pointer;
+                }
 
-    .card_deco_btn:hover {
-        background-color: #f0f0f0;
+                .card_deco_btn:hover {
+                    background-color: #f0f0f0;
+                }
+            }
+        }
     }
 
     /* Index - Proyectos a medida */
 
-    .card_proyectos {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 2%;
-        margin: 2% 15%;
-    }
+    .section_proyectos {
+        background-color: #f5ead4;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
 
-    .text_proyectos {
-        text-align: center;
-        justify-content: center;
-        color: #412C25;
-        margin-right: 5%;
-
-        h3 {
-            color: #7B421B;
-        }
-
-        .p_proyectos {
-            padding: 20% 5%;
-            color: #412C25;
-        }
-
-        .card_proyectos_btn {
+        .card_proyectos {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             justify-content: center;
-            color: #fff;
-            background-color: #7B421B;
-            padding: 5px;
-            width: 200px;
-            margin-left: 30%;
+            align-items: center;
 
-        }
-    }
+            .text_proyectos {
+                flex: 1 0 50%;
+                padding: 2%;
+                margin-bottom: 20px;
+                text-align: center;
 
-    .img_proyectos {
-        img {
-            width: 400px;
-            height: 500px;
-            opacity: 1;
+                h3 {
+                    color: #7f4721;
+                    margin-bottom: 15%;
+                    font-size: 30px;
+                    font-weight: bold;
+                    margin-top: 10%;
+                    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+                }
+
+                .p_proyectos {
+                    color: #412c25;
+                    text-align: justify;
+                    margin: 0 auto;
+                    max-width: 80%;
+                    line-height: 1.6;
+                    font-weight: bolder;
+
+                }
+
+                .card_proyectos_btn {
+                    border-radius: 40px;
+                    margin-top: 20%;
+                    background-color: white;
+                    color: #7b421b;
+                    border: none;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    cursor: pointer;
+                }
+
+                .card_proyectos_btn:hover {
+                    background-color: #f0f0f0;
+
+                }
+            }
+
+            .img_proyectos {
+                flex: 1 0 50%;
+                width: 50%;
+                position: relative;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+
         }
     }
 
@@ -403,7 +421,6 @@ main {
         margin-bottom: 100px;
         text-align: center;
     }
-
 
     .seccion_muebles {
         display: flex;
@@ -469,9 +486,7 @@ main {
             div:hover {
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             }
-
         }
-
     }
 }
 
@@ -554,20 +569,6 @@ main {
 
 
 /**----------------------------------------LOGO FLOTANTE------------------------ **/
-
-// .fixed {
-//     position: fixed;
-//     right: 4%;
-//     bottom: 20%;
-//     border-radius: 100%;
-//     box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-//     -webkit-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-//     -moz-box-shadow: 10px 10px 32px -4px rgba(0, 0, 0, 0.75);
-//     display: flex;
-//     justify-content: center;
-//     align-items: center; 
-// }
-
 .fixed {
     position: fixed;
     right: 4%;

@@ -91,7 +91,6 @@ main {
     main .hero .parallax .carousel-item {
       background-color: black;
       align-items: center;
-      /* Centra horizontalmente */
       justify-content: center; }
       main .hero .parallax .carousel-item .heroH1 {
         color: #e4e4e4;
@@ -107,7 +106,6 @@ main {
         opacity: 0.5;
         width: auto;
         height: 100vh;
-        /* Ajusta el alto de la imagen */
         object-fit: cover; }
   main .sobrenosotros {
     padding: 5% 15%;
@@ -115,38 +113,39 @@ main {
     background-color: #F5EAD4;
     gap: 20px;
     height: auto;
-    /* En lugar de una altura fija, usa auto para que se ajuste al contenido */
     margin-left: 5%;
-    margin-right: 5%;
-    /* width: 90%; */
-    /* No es necesario si usas margen izquierdo y derecho */ }
-    main .sobrenosotros p {
+    margin-right: 5%; }
+    main .sobrenosotros .title {
+      color: #7b421b;
+      font-size: 30px;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
+    main .sobrenosotros .text p {
       color: #7b421b;
       font-weight: bolder;
-      text-align: justify; }
-    main .sobrenosotros .title {
-      color: #7b421b; }
+      text-align: justify;
+      font-size: 18px; }
     main .sobrenosotros .button-container {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center; }
-    main .sobrenosotros .conocenosbtn {
-      border-radius: 14px;
-      background-color: #7b421b;
-      color: #F5EAD4;
-      font-size: 18px;
-      font-weight: 400;
-      text-decoration: none;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer; }
+      main .sobrenosotros .button-container .button .conocenosbtn {
+        border-radius: 14px;
+        background-color: #7b421b;
+        color: #F5EAD4;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer; }
   main .muebles {
     margin-top: 2%;
     padding: 3% 15%; }
     main .muebles h2 {
       margin-bottom: 3%;
-      color: #7b421b; }
+      color: #7b421b;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
     main .muebles .carousel-inner .carousel-item {
       position: relative;
       background-color: black; }
@@ -154,42 +153,36 @@ main {
         opacity: 0.6; }
       main .muebles .carousel-inner .carousel-item .carousel-text {
         margin-bottom: 20px;
-        /* Ajusta el margen inferior del texto */
         font-weight: bolder;
         color: #ffffff;
         text-shadow: #000000 0.1em 0.1em 0.2em;
         font-size: 40px;
         position: absolute;
         top: 30%;
-        /* Alinea verticalmente el texto */
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1;
-        /* Asegura que el texto esté por encima del botón */ }
+        z-index: 1; }
       main .muebles .carousel-inner .carousel-item .button {
         position: absolute;
         bottom: 10%;
-        /* Ajusta la posición vertical del botón */
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1;
-        /* Asegura que el botón esté por debajo del texto */ }
+        z-index: 1; }
     main .muebles .descubribtn {
       border-radius: 40px;
       margin-bottom: 30%;
       background-color: white;
       color: #7b421b;
-      /* Cambia el color del texto aquí */
       border: none;
       font-size: 18px;
       font-weight: bolder;
       cursor: pointer; }
     main .muebles .descubribtn:hover {
-      background-color: #f0f0f0;
-      /* Puedes agregar estilos adicionales para el estado hover del botón aquí */ }
+      background-color: #f0f0f0; }
   main .ambientaciones .title {
     color: #7b421b;
-    margin-top: 2%; }
+    margin-top: 2%;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
   main .ambientaciones .card-group-ambientaciones {
     gap: 20px;
     padding: 2% 5%;
@@ -238,77 +231,97 @@ main {
     background-color: #CF5D20;
     max-width: 90%;
     margin: 0 auto; }
-  main .card_deco {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
-  main .img_deco {
-    flex: 1 0 50%;
-    width: 50%;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
-  main .img_deco img {
-    width: 100%;
-    height: auto; }
-  main .text_deco {
-    flex: 1 0 50%;
-    padding: 2%;
-    margin-bottom: 20px;
-    text-align: center; }
-  main .text_deco h3 {
-    color: #fff;
-    margin-bottom: 15%;
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 10%;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
-  main .text_deco p.p_deco {
-    color: #fff;
-    text-align: justify;
-    margin: 0 auto;
-    max-width: 80%;
-    line-height: 1.6; }
-  main .card_deco_btn {
-    border-radius: 40px;
-    margin-top: 20%;
-    background-color: white;
-    color: #7b421b;
-    border: none;
-    font-size: 20px;
-    font-weight: bolder;
-    cursor: pointer; }
-  main .card_deco_btn:hover {
-    background-color: #f0f0f0; }
-  main .card_proyectos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 2%;
-    margin: 2% 15%; }
-  main .text_proyectos {
-    text-align: center;
-    justify-content: center;
-    color: #412C25;
-    margin-right: 5%; }
-    main .text_proyectos h3 {
-      color: #7B421B; }
-    main .text_proyectos .p_proyectos {
-      padding: 20% 5%;
-      color: #412C25; }
-    main .text_proyectos .card_proyectos_btn {
+    main .section_deco .card_deco {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
-      color: #fff;
-      background-color: #7B421B;
-      padding: 5px;
-      width: 200px;
-      margin-left: 30%; }
-  main .img_proyectos img {
-    width: 400px;
-    height: 500px;
-    opacity: 1; }
+      align-items: center; }
+      main .section_deco .card_deco .img_deco {
+        flex: 1 0 50%;
+        width: 50%;
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        main .section_deco .card_deco .img_deco img {
+          width: 100%;
+          height: auto; }
+      main .section_deco .card_deco .text_deco {
+        flex: 1 0 50%;
+        padding: 2%;
+        margin-bottom: 20px;
+        text-align: center; }
+        main .section_deco .card_deco .text_deco h3 {
+          color: #fff;
+          margin-bottom: 15%;
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 10%;
+          text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
+        main .section_deco .card_deco .text_deco .p_deco {
+          color: #fff;
+          text-align: justify;
+          margin: 0 auto;
+          max-width: 80%;
+          line-height: 1.6; }
+        main .section_deco .card_deco .text_deco .card_deco_btn {
+          border-radius: 40px;
+          margin-top: 20%;
+          background-color: white;
+          color: #7b421b;
+          border: none;
+          font-size: 20px;
+          font-weight: bolder;
+          cursor: pointer; }
+        main .section_deco .card_deco .text_deco .card_deco_btn:hover {
+          background-color: #f0f0f0; }
+  main .section_proyectos {
+    background-color: #f5ead4;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%; }
+    main .section_proyectos .card_proyectos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      main .section_proyectos .card_proyectos .text_proyectos {
+        flex: 1 0 50%;
+        padding: 2%;
+        margin-bottom: 20px;
+        text-align: center; }
+        main .section_proyectos .card_proyectos .text_proyectos h3 {
+          color: #7f4721;
+          margin-bottom: 15%;
+          font-size: 30px;
+          font-weight: bold;
+          margin-top: 10%;
+          text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2); }
+        main .section_proyectos .card_proyectos .text_proyectos .p_proyectos {
+          color: #412c25;
+          text-align: justify;
+          margin: 0 auto;
+          max-width: 80%;
+          line-height: 1.6;
+          font-weight: bolder; }
+        main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
+          border-radius: 40px;
+          margin-top: 20%;
+          background-color: white;
+          color: #7b421b;
+          border: none;
+          font-size: 20px;
+          font-weight: bolder;
+          cursor: pointer; }
+        main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn:hover {
+          background-color: #f0f0f0; }
+      main .section_proyectos .card_proyectos .img_proyectos {
+        flex: 1 0 50%;
+        width: 50%;
+        position: relative;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+        main .section_proyectos .card_proyectos .img_proyectos img {
+          width: 100%;
+          height: auto; }
   main .img-dos {
     background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d"); }
   main .principal_sobre_nosotros {
@@ -508,39 +521,79 @@ footer {
       align-items: center;
       padding: 10px 5px;
       margin-top: 3%;
-      font-size: 16px;
-      text-align: center; }
-      footer .grupo-1 .box_1 h2 {
-        font-size: 30px; }
-      footer .grupo-1 .box_1 .showroom {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        footer .grupo-1 .box_1 .showroom p {
-          padding: 10px 5px;
-          color: #fff;
-          text-align: center; }
-        footer .grupo-1 .box_1 .showroom h3 {
-          font-size: 30px; }
-      footer .grupo-1 .box_1 .redes {
+      font-size: 16px; }
+      footer .grupo-1 .box_1 .title_box_1 {
+        font-size: 30px;
         margin-bottom: 30px; }
-        footer .grupo-1 .box_1 .redes a {
-          padding: 0px 20px;
-          justify-content: space-evenly; }
-          footer .grupo-1 .box_1 .redes a img {
-            opacity: 1; }
-      footer .grupo-1 .box_1 .servicios a {
-        text-decoration: none;
-        color: #EDEDED; }
       footer .grupo-1 .box_1 .contacto {
+        margin-bottom: 0px;
         display: flex;
         flex-direction: column; }
         footer .grupo-1 .box_1 .contacto a {
           text-decoration: none;
-          color: #EDEDED; }
+          color: #EDEDED;
+          margin-bottom: 30px;
+          font-size: 18px; }
+          footer .grupo-1 .box_1 .contacto a img {
+            opacity: 1;
+            width: 30px; }
+    footer .grupo-1 .box_2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 5px;
+      margin-top: 3%;
+      text-align: center; }
+      footer .grupo-1 .box_2 .title_box_2 {
+        font-size: 30px; }
+      footer .grupo-1 .box_2 .p_box_2 {
+        margin-top: 30px;
+        color: #EDEDED;
+        font-size: 16px; }
 
 /*--------------------------------MEDIA QUERIES--------------------*/
+@media screen and (max-width: 1170px) {
+  main .hero #carouselExampleSlidesOnly .carousel-inner .carousel-item .heroH1 {
+    font-size: 60px; }
+  main .sobrenosotros .title h2 {
+    font-size: 25px; }
+  main .sobrenosotros .text p {
+    font-size: 14px; }
+  main .sobrenosotros .button-container .button .conocenosbtn {
+    font-size: 14px; }
+  main .section_deco .card_deco {
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center; }
+    main .section_deco .card_deco .text_deco h3 {
+      margin-bottom: 4%;
+      font-size: 20px; }
+    main .section_deco .card_deco .text_deco .p_deco {
+      width: 90%;
+      font-size: 14px; }
+    main .section_deco .card_deco .text_deco .card_deco_btn {
+      margin-top: 5%;
+      font-size: 14px; }
+  main .section_proyectos .card_proyectos .text_proyectos h3 {
+    font-size: 20px; }
+  main .section_proyectos .card_proyectos .text_proyectos .p_proyectos {
+    font-size: 14px; }
+  main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
+    font-size: 14px; }
+  footer .grupo-1 .box a .img_box {
+    width: 120px; }
+  footer .grupo-1 .box_1 .title_box_1 {
+    font-size: 20px; }
+  footer .grupo-1 .box_1 .contacto a {
+    font-size: 13px; }
+  footer .grupo-1 .box_2 .title_box_2 {
+    font-size: 20px; }
+  footer .grupo-1 .box_2 .p_box_2 {
+    font-size: 13px; } }
+
 @media screen and (max-width: 768px) {
+  main .hero #carouselExampleSlidesOnly .carousel-inner .carousel-item .heroH1 {
+    font-size: 50px; }
   main .muebles .carousel .carousel-inner .carousel-item .carousel-text {
     font-size: 30px; }
   main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .descubribtn {
@@ -549,43 +602,58 @@ footer {
     font-size: 15px; }
   main .card-group-ambientaciones {
     flex-direction: column; }
-  main .section_deco .card_deco {
-    flex-direction: column; }
-    main .section_deco .card_deco .img_deco {
-      margin-top: 10%; }
-    main .section_deco .card_deco .text_deco {
-      margin-bottom: 0; }
-      main .section_deco .card_deco .text_deco h3 {
-        font-size: 24px; }
-      main .section_deco .card_deco .text_deco .p_deco {
-        font-size: 16px;
-        width: 75%;
-        margin-bottom: 5%; }
-      main .section_deco .card_deco .text_deco .card_deco_btn {
-        font-size: 16px;
-        margin-bottom: 5%; } }
-
-@media screen and (max-width: 1170px) {
-  main .section_deco .card_deco {
-    padding-bottom: 0px;
-    justify-content: center;
-    align-items: center; }
+  main .section_deco .card_deco .text_deco {
+    margin-bottom: 0;
+    padding-right: 10%;
+    padding-left: 10%; }
     main .section_deco .card_deco .text_deco h3 {
-      margin-bottom: 4%;
-      font-size: 25px; }
+      font-size: 20px; }
     main .section_deco .card_deco .text_deco .p_deco {
-      width: 90%;
-      font-size: 14px; }
+      font-size: 14px;
+      width: 75%;
+      margin-bottom: 5%; }
     main .section_deco .card_deco .text_deco .card_deco_btn {
-      margin-top: 4%;
-      font-size: 12px; }
-  footer .grupo-1 .box a .img_box {
-    width: 100px; }
-  footer .grupo-1 .box_1 h2 {
-    font-size: 18px; }
-  footer .grupo-1 .box_1 .showroom h3 {
-    font-size: 18px; }
-  footer .grupo-1 .box_1 .showroom p {
-    font-size: 16px; }
-  footer .grupo-1 .box_1 .redes a img {
-    width: 25px; } }
+      font-size: 14px;
+      margin-bottom: 5%; }
+  main .section_proyectos .card_proyectos .text_proyectos {
+    padding-right: 10%;
+    padding-left: 10%; }
+    main .section_proyectos .card_proyectos .text_proyectos h3 {
+      margin-bottom: 6%;
+      font-size: 20px; }
+    main .section_proyectos .card_proyectos .text_proyectos .p_proyectos {
+      font-size: 14px; }
+    main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
+      margin-top: 10%;
+      font-size: 14px; }
+  footer .grupo-1 {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+    footer .grupo-1 .box {
+      justify-content: center;
+      align-items: center; }
+      footer .grupo-1 .box a .img_box {
+        width: 120px; }
+    footer .grupo-1 .box_1 .title_box_1 {
+      font-size: 22px; }
+    footer .grupo-1 .box_1 .contacto a {
+      font-size: 18px; }
+    footer .grupo-1 .box_2 .title_box_2 {
+      font-size: 22px; }
+    footer .grupo-1 .box_2 .p_box_2 {
+      font-size: 18px; } }
+
+@media screen and (max-width: 550px) {
+  header .container-fluid .navbar-toggler {
+    width: 150px; }
+  .muebles .carousel .carousel-inner .carousel-item .carousel-text {
+    font-size: 30px; }
+  .muebles .carousel .carousel-inner .carousel-item .carousel-caption .descubribtn {
+    margin-bottom: 5%; } }
+
+@media screen and (max-width: 400px) {
+  header .container-fluid .navbar-toggler {
+    width: 50px; }
+  main .hero #carouselExampleSlidesOnly .carousel-inner .carousel-item .heroH1 {
+    font-size: 40px; } }

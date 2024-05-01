@@ -38,54 +38,47 @@ footer {
             padding: 10px 5px;
             margin-top: 3%;
             font-size: 16px;
-            text-align: center;
 
-            h2 {
+            .title_box_1 {
                 font-size: 30px;
-            }
-
-            .showroom {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                p {
-                    padding: 10px 5px;
-                    color: #fff;
-                    text-align: center;
-                }
-
-                h3 {
-                    font-size: 30px;
-                }
-            }
-
-            .redes {
                 margin-bottom: 30px;
-
-                a {
-                    padding: 0px 20px;
-                    justify-content: space-evenly;
-
-                    img {
-                        opacity: 1;
-                    }
-                }
-            }
-
-            .servicios a {
-                text-decoration: none;
-                color: #EDEDED;
             }
 
             .contacto {
+                margin-bottom: 0px;
                 display: flex;
                 flex-direction: column;
 
                 a {
                     text-decoration: none;
                     color: #EDEDED;
+                    margin-bottom: 30px;
+                    font-size: 18px;
+
+                    img {
+                        opacity: 1;
+                        width: 30px;
+                    }
                 }
+            }
+        }
+
+        .box_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 5px;
+            margin-top: 3%;
+            text-align: center;
+
+            .title_box_2 {
+                font-size: 30px;
+            }
+
+            .p_box_2 {
+                margin-top: 30px;
+                color: #EDEDED;
+                font-size: 16px;
             }
         }
     }

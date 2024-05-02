@@ -321,7 +321,45 @@ main {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
         main .section_proyectos .card_proyectos .img_proyectos img {
           width: 100%;
+          max-height: auto; }
+  main .section_exp_pecar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2%; }
+    main .section_exp_pecar .card_exp_pecar {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      main .section_exp_pecar .card_exp_pecar .img_exp_pecar {
+        width: 50%;
+        box-sizing: border-box; }
+        main .section_exp_pecar .card_exp_pecar .img_exp_pecar img {
+          width: 100%;
           height: auto; }
+      main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 {
+        width: 50%;
+        box-sizing: border-box;
+        background-color: #f5ead4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 img {
+          margin-top: 10%;
+          width: 80%;
+          height: auto; }
+        main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 p {
+          text-align: center;
+          color: black;
+          font-size: 30px;
+          margin-bottom: 5%;
+          margin-left: 10%;
+          margin-right: 10%;
+          font-family: "Sofia", sans-serif;
+          font-style: italic; }
   main .img-dos {
     background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d"); }
   main .principal_sobre_nosotros {
@@ -580,6 +618,10 @@ footer {
     font-size: 14px; }
   main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
     font-size: 14px; }
+  main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px; }
   footer .grupo-1 .box a .img_box {
     width: 120px; }
   footer .grupo-1 .box_1 .title_box_1 {
@@ -626,6 +668,21 @@ footer {
     main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
       margin-top: 10%;
       font-size: 14px; }
+  main .section_exp_pecar .card_exp_pecar {
+    flex-direction: column;
+    align-items: center; }
+    main .section_exp_pecar .card_exp_pecar .img_exp_pecar {
+      width: 100%; }
+      main .section_exp_pecar .card_exp_pecar .img_exp_pecar img {
+        display: none; }
+    main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 {
+      width: 100%; }
+      main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 p {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-size: 25px; }
   footer .grupo-1 {
     display: block;
     margin-top: 5%;

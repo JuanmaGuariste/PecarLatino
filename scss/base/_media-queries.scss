@@ -84,7 +84,35 @@
                 }
             }
         }
+
+        //------------------------Experiencia pecar latino------------------------
+
+        .section_exp_pecar {
+
+
+            .card_exp_pecar {
+
+                .img_exp_pecar {
+
+                    img {}
+                }
+
+                .img_exp_pecar_2 {
+
+                    img {}
+
+                    p {
+                        margin-left: 5%;
+                        margin-right: 5%;
+                        font-size: 20px;
+
+                    }
+                }
+            }
+        }
     }
+
+
 
     //-------------------Footer-------------------
     footer {
@@ -120,6 +148,8 @@
             }
         }
     }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -210,6 +240,31 @@
                     .card_proyectos_btn {
                         margin-top: 10%;
                         font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        //------------------------Experiencia pecar latino------------------------
+        .section_exp_pecar {   
+            .card_exp_pecar {
+                flex-direction: column;
+                align-items: center;                
+                .img_exp_pecar {
+                    width: 100%;
+                    img {
+                        display: none;
+                    }
+                }
+
+                .img_exp_pecar_2 {
+                    width: 100%;                  
+                    p {
+                        margin-left: 15%;
+                        margin-right: 15%;
+                        margin-bottom: 5%;
+                        margin-top: 5%;
+                        font-size: 25px;
                     }
                 }
             }

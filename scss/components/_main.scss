@@ -357,13 +357,63 @@ main {
 
                 img {
                     width: 100%;
+                    max-height: auto;
+                }
+            }
+        }
+    }
+
+    //------------------------Experiencia pecar latino------------------------
+       
+    .section_exp_pecar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+
+        .card_exp_pecar {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            .img_exp_pecar {
+                width: 50%;
+                box-sizing: border-box;
+                img {
+                    width: 100%;
                     height: auto;
                 }
             }
-
-
+            .img_exp_pecar_2 {
+                width: 50%;
+                box-sizing: border-box;
+                background-color: #f5ead4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    margin-top: 10%;
+                    width: 80%;
+                    height: auto;
+                }
+                p {
+                    text-align: center;
+                    color: black;
+                    font-size: 30px;
+                    margin-bottom: 5%;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    font-family: "Sofia", sans-serif;
+                    font-style: italic;
+                }
+            }
         }
     }
+
+
+  
 
     /* Index - Café */
     .img-dos {

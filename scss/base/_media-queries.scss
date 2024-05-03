@@ -246,19 +246,22 @@
         }
 
         //------------------------Experiencia pecar latino------------------------
-        .section_exp_pecar {   
+        .section_exp_pecar {
             .card_exp_pecar {
                 flex-direction: column;
-                align-items: center;                
+                align-items: center;
+
                 .img_exp_pecar {
                     width: 100%;
+
                     img {
                         display: none;
                     }
                 }
 
                 .img_exp_pecar_2 {
-                    width: 100%;                  
+                    width: 100%;
+
                     p {
                         margin-left: 15%;
                         margin-right: 15%;
@@ -266,6 +269,29 @@
                         margin-top: 5%;
                         font-size: 25px;
                     }
+                }
+            }
+        }
+
+        //------------------------Sobre nosotros------------------------
+
+        .imagenes_sobre_nosotros {
+            .sobre_nosotros_title {
+                font-size: 30px;
+            }
+
+            .sobre_nosotros_text {
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .sobre_nosotros_img {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    max-width: 90%;
                 }
             }
         }
@@ -381,6 +407,35 @@
                             font-size: 40px;
                         }
                     }
+                }
+            }
+        }
+
+        //------------------------Sobre nosotros------------------------
+
+        .imagenes_sobre_nosotros {    
+
+            .sobre_nosotros_title {
+                font-size: 25px;
+            }
+
+            .sobre_nosotros_text {
+                p {
+
+                    font-size: 12px;
+                }
+            }
+
+            .sobre_nosotros_img {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    max-width: 90%;
+                }
+
+                .img_sec {
+                    display: none;
                 }
             }
         }

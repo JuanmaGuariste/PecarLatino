@@ -395,7 +395,7 @@ main {
       margin-top: 40px;
       margin-bottom: 50px; }
       main .imagenes_sobre_nosotros .sobre_nosotros_img img {
-        max-width: 500px;
+        max-width: 50%;
         height: auto;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
   main .principal_muebles {
@@ -690,6 +690,15 @@ footer {
         margin-bottom: 5%;
         margin-top: 5%;
         font-size: 25px; }
+  main .imagenes_sobre_nosotros .sobre_nosotros_title {
+    font-size: 30px; }
+  main .imagenes_sobre_nosotros .sobre_nosotros_text p {
+    font-size: 14px; }
+  main .imagenes_sobre_nosotros .sobre_nosotros_img {
+    flex-direction: column;
+    align-items: center; }
+    main .imagenes_sobre_nosotros .sobre_nosotros_img img {
+      max-width: 90%; }
   footer .grupo-1 {
     display: block;
     margin-top: 5%;
@@ -720,4 +729,15 @@ footer {
   header .container-fluid .navbar-toggler {
     width: 50px; }
   main .hero #carouselExampleSlidesOnly .carousel-inner .carousel-item .heroH1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  main .imagenes_sobre_nosotros .sobre_nosotros_title {
+    font-size: 25px; }
+  main .imagenes_sobre_nosotros .sobre_nosotros_text p {
+    font-size: 12px; }
+  main .imagenes_sobre_nosotros .sobre_nosotros_img {
+    flex-direction: column;
+    align-items: center; }
+    main .imagenes_sobre_nosotros .sobre_nosotros_img img {
+      max-width: 90%; }
+    main .imagenes_sobre_nosotros .sobre_nosotros_img .img_sec {
+      display: none; } }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,900&display=swap");
 /*----------------RESET--------------------*/
 * {
@@ -76,7 +75,6 @@ main {
   /* Index -Ambientaciones */
   /* Index - Deco */
   /* Index - Proyectos a medida */
-  /* Index - Café */
   /**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/
   /**----------------------------------------MAIN MUEBLES------------------------ **/ }
   main .hero .parallax {
@@ -360,12 +358,30 @@ main {
           margin-right: 10%;
           font-family: "Sofia", sans-serif;
           font-style: italic; }
-  main .img-dos {
-    background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d"); }
+  main .imagenes_sobre_nosotros {
+    padding: 5% 15%;
+    background-color: #F5EAD4;
+    gap: 20px;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%; }
+    main .imagenes_sobre_nosotros .sobre_nosotros_title {
+      color: #7b421b;
+      font-size: 40px;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      margin-bottom: 5%;
+      font-weight: bolder; }
+    main .imagenes_sobre_nosotros .sobre_nosotros_text {
+      text-align: justify; }
+      main .imagenes_sobre_nosotros .sobre_nosotros_text p {
+        color: #7b421b;
+        font-weight: bolder;
+        font-size: 18px; }
   main .principal_sobre_nosotros {
     color: black;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 5%;
+    margin-bottom: 7%;
     text-align: center; }
   main .imagenes_sobre_nosotros {
     display: flex;
@@ -384,13 +400,6 @@ main {
       main .imagenes_sobre_nosotros .sobre_nosotros_img img {
         max-width: 700px;
         height: auto; }
-    main .imagenes_sobre_nosotros .bienvenidos-text {
-      text-align: justify;
-      width: 80%;
-      max-width: 1200px; }
-      main .imagenes_sobre_nosotros .bienvenidos-text p {
-        color: #000000;
-        margin-bottom: 50px; }
   main .principal_muebles {
     color: black;
     margin-top: 200px;

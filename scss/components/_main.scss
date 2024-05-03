@@ -363,7 +363,7 @@ main {
         }
     }
 
-    //------------------------Experiencia pecar latino------------------------
+    //------------------------Index Experiencia pecar latino------------------------
        
     .section_exp_pecar {
         display: flex;
@@ -411,21 +411,70 @@ main {
             }
         }
     }
+ 
 
 
-  
-
-    /* Index - Café */
-    .img-dos {
-        background-image: url("https://img.freepik.com/foto-gratis/taza-cafe-disposicion-mujeres-textura-madera_1150-12747.jpg?w=996&t=st=1695941139~exp=1695941739~hmac=71a888c7f9115c4934566ec941f9ec61d545e5fa482c061d8e18866e259ef46d");
-    }
 
     /**----------------------------------------MAIN SOBRE NOSOTROS------------------------ **/
+    .imagenes_sobre_nosotros {
+        padding: 5% 15%;
+        // margin-top: 2%;
+        background-color: #F5EAD4;
+        gap: 20px;
+        height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
 
+       
+
+            .sobre_nosotros_title {
+                color: #7b421b;
+                font-size: 40px;
+                text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                margin-bottom: 5%;
+                font-weight: bolder;
+
+            }
+    
+            .sobre_nosotros_text {
+                text-align: justify;
+    
+                p {
+                    color: #7b421b;
+                    font-weight: bolder;
+                    font-size: 18px;
+                }
+            }
+        
+
+
+        // .button-container {
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     text-align: center;
+
+        //     .button {
+        //         .conocenosbtn {
+        //             border-radius: 14px;
+        //             background-color: #7b421b;
+        //             color: #F5EAD4;
+        //             font-size: 18px;
+        //             font-weight: 400;
+        //             text-decoration: none;
+        //             padding: 10px 20px;
+        //             border: none;
+        //             cursor: pointer;
+        //         }
+        //     }
+        // }
+
+    }
     .principal_sobre_nosotros {
         color: black;
-        margin-top: 200px;
-        margin-bottom: 100px;
+        margin-top: 5%;
+        margin-bottom: 7%;
         text-align: center;
     }
 
@@ -451,17 +500,25 @@ main {
             }
         }
 
-        .bienvenidos-text {
-            text-align: justify;
-            width: 80%;
-            max-width: 1200px;
+        // .bienvenidos-text {
+        //     text-align: justify;
+        //     // width: 100%;
+        //     max-width: 1200px;
+        //     background-color: #f5ead4;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     padding-top: 5%;
+        //     padding-bottom: 5%;
 
-            p {
-                color: #000000;
-                // font-weight: bold;
-                margin-bottom: 50px;
-            }
-        }
+        //     p {
+        //         width: 60%;
+
+        //         color: #000000;
+        //         font-weight: bolder;
+        //         margin-bottom: 2%;
+        //     }
+        // }
     }
 
     /**----------------------------------------MAIN MUEBLES------------------------ **/

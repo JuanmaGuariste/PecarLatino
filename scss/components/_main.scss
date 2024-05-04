@@ -477,68 +477,77 @@ main {
     }
 
 
-    /**----------------------------------------MAIN MUEBLES------------------------ **/
-    .principal_muebles {
-        color: black;
-        margin-top: 200px;
-        margin-bottom: 100px;
-        text-align: center;
-    }
+    /**----------------------------------------MAIN muebles------------------------ **/
 
-    .seccion_muebles {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .imagenes_muebles {
+        padding: 5% 15%;
+        // margin-top: 2%;
+        background-color: #F5EAD4;
         gap: 20px;
+        // height: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        // margin-bottom: 2%;
 
-        .imagen_mueble_principal {
+        .muebles_title {
+            color: #7b421b;
+            font-size: 40px;
+            text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 5%;
+            font-weight: bolder;
+        }
+
+        .sobre_nosotros_img_principal {
             display: flex;
-            flex-direction: column;
-            width: 80%;
-            height: auto;
-            margin-bottom: 100px;
-            align-items: center;
+            justify-content: center;
 
             img {
-                height: auto;
-                width: 80%;
+                width: 100%;
             }
         }
     }
 
     .grupo_muebles {
+        background-color: #F5EAD4;
+
+        margin: 0 auto;
+        // margin-bottom: 30px;
+        padding: 20px;
+        // border-radius: 10px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 20px;
-        width: 80%;
-        margin-bottom: 30px;
+        width: 90%;
 
         .muebles_img {
+
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 20px;
-            width: 80%;
+            width: 70%;
 
-            div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            .myBtn {
+                background-color: #F5EAD4;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
                 transition: box-shadow 0.3s ease;
+                width: calc(50% - 10px);
+                // border: 2px solid #b3b3b3;
 
                 img {
                     width: 100%;
-                    max-width: 600px;
-                    height: 900px;
-                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
                 }
 
                 .mueble-text {
-                    margin-top: 20px;
-                    text-align: center;
-                    font-size: 16px;
-                    color: #333;
+                    font-size: 18px;
+                    color: #CF5D20;
+                    font-weight: bolder;
+                    margin-top: 5px;
+                    margin-bottom: 0px;
                 }
 
                 .mueble-description {
@@ -546,12 +555,89 @@ main {
                 }
             }
 
-            div:hover {
+            .myBtn:hover {
                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             }
         }
     }
+
 }
+
+
+//.principal_muebles {
+//         color: black;
+//         margin-top: 200px;
+//         margin-bottom: 100px;
+//         text-align: center;
+//     }
+
+//     .seccion_muebles {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 20px;
+
+//         .imagen_mueble_principal {
+//             display: flex;
+//             flex-direction: column;
+//             width: 80%;
+//             height: auto;
+//             margin-bottom: 100px;
+//             align-items: center;
+
+//             img {
+//                 height: auto;
+//                 width: 80%;
+//             }
+//         }
+//     }
+
+//     .grupo_muebles {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 20px;
+//         width: 80%;
+//         margin-bottom: 30px;
+
+//         .muebles_img {
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             gap: 20px;
+//             width: 80%;
+
+//             div {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 transition: box-shadow 0.3s ease;
+
+//                 img {
+//                     width: 100%;
+//                     max-width: 600px;
+//                     height: 900px;
+//                     object-fit: cover;
+//                 }
+
+//                 .mueble-text {
+//                     margin-top: 20px;
+//                     text-align: center;
+//                     font-size: 16px;
+//                     color: #333;
+//                 }
+
+//                 .mueble-description {
+//                     display: none;
+//                 }
+//             }
+
+//             div:hover {
+//                 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+//             }
+//         }
+//     }
+// }
 
 /* Modal */
 .modal {
@@ -580,6 +666,7 @@ main {
 
     .modal-container {
         display: flex;
+        
     }
 
     .modal-image {
@@ -594,11 +681,24 @@ main {
         padding: 10px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        color: #CF5D20;
+        font-weight: bolder;
     }
 
     .modal-text p {
-        margin-top: 20px;
-        margin-bottom: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 90%;
+        padding-top: 0px;
+    }
+
+    .modal-text h2 {
+        margin-bottom: 0%
+    }
+
+    .modal-text a {
+        margin-top: 10%
     }
 
     img {

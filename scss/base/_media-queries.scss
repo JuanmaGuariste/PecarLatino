@@ -295,11 +295,74 @@
                 }
             }
         }
+
+
+        /**----------------------------------------MAIN muebles------------------------ **/
+        .imagenes_muebles {
+            .muebles_title {
+                font-size: 30px;
+            }
+        }
+
+        .grupo_muebles {
+            .muebles_img {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .myBtn {
+                    width: calc(70% - 10px);
+                }
+            }
+        }
+
+        /* Modal */
+        .modal {
+            .modal-content {
+                .modal-container {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .modal-image {
+                        max-width: 70%;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .modal-text {
+                        p {
+                            font-size: 14px;
+                        }
+
+                        h2 {
+                            text-align: center;
+                            font-size: 20px;
+                        }
+
+                        h3 {
+                            text-align: center;
+                            font-size: 17px;
+                        }
+
+                        h4 {
+                            font-size: 14px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+            }
+        }
     }
 
     //-------------------Footer-------------------
     footer {
-
         .grupo-1 {
             display: block;
             margin-top: 5%;
@@ -363,21 +426,36 @@
                 }
             }
         }
-    }
 
-    //-------------------Muebles-------------------
-    .muebles {
-        .carousel {
-            .carousel-inner {
-                .carousel-item {
-                    .carousel-text {
-                        font-size: 30px;
+
+        //-------------------Muebles-------------------
+        .muebles {
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .carousel-text {
+                            font-size: 30px;
+                        }
+
+                        .carousel-caption {
+                            .descubribtn {
+                                margin-bottom: 5%;
+                            }
+                        }
                     }
 
-                    .carousel-caption {
-                        .descubribtn {
-                            margin-bottom: 5%;
-                        }
+                }
+            }
+        }
+
+        /**----------------------------------------MAIN muebles------------------------ **/
+
+        /* Modal */
+        .modal {
+            .modal-content {
+                .modal-container {
+                    .modal-text {
+                        max-width: 80%;                       
                     }
                 }
 
@@ -413,7 +491,7 @@
 
         //------------------------Sobre nosotros------------------------
 
-        .imagenes_sobre_nosotros {    
+        .imagenes_sobre_nosotros {
 
             .sobre_nosotros_title {
                 font-size: 25px;
@@ -437,6 +515,55 @@
                 .img_sec {
                     display: none;
                 }
+            }
+        }
+
+        /**----------------------------------------MAIN muebles------------------------ **/
+        .imagenes_muebles {
+            .muebles_title {
+                font-size: 25px;
+            }
+        }
+
+        .grupo_muebles {
+            .muebles_img {
+                .myBtn {
+                    .mueble-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        /* Modal */
+        .modal {
+            .modal-content {
+                .modal-container {
+                    .modal-text {
+
+                        p {
+                            font-size: 14px;
+                        }
+
+                        h2 {
+
+                            font-size: 18px;
+                        }
+
+                        h3 {
+                            font-size: 16px;
+                        }
+
+                        h4 {
+                            font-size: 14px;
+                        }
+
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
             }
         }
     }

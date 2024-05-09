@@ -343,25 +343,10 @@ main {
           height: auto; }
       main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 {
         width: 50%;
-        box-sizing: border-box;
-        background-color: #f5ead4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between; }
+        box-sizing: border-box; }
         main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 img {
-          margin-top: 10%;
-          width: 80%;
+          width: 100%;
           height: auto; }
-        main .section_exp_pecar .card_exp_pecar .img_exp_pecar_2 p {
-          text-align: center;
-          color: black;
-          font-size: 30px;
-          margin-bottom: 5%;
-          margin-left: 10%;
-          margin-right: 10%;
-          font-family: "Sofia", sans-serif;
-          font-style: italic; }
   main .imagenes_sobre_nosotros {
     padding: 5% 15%;
     background-color: #F5EAD4;

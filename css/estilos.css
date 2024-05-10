@@ -112,6 +112,10 @@ main {
     padding: 5% 15%;
     margin-top: 2%;
     background-color: #F5EAD4;
+    background-image: url("../assents/asdasdo.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(245, 234, 212, 0.8);
     gap: 20px;
     height: auto;
     margin-left: 5%;

@@ -234,7 +234,7 @@ main {
 
     /* Index - Deco */
     .section_deco {
-        background-color: #CF5D20;
+        // background-color: #CF5D20;
         max-width: 90%;
         margin: 0 auto;
 
@@ -243,6 +243,9 @@ main {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            background-image: url('../assents/index/deco/fondo-deco.png'); 
+
+            background-size: cover; 
 
             .img_deco {
                 flex: 1 0 50%;
@@ -261,6 +264,8 @@ main {
                 padding: 2%;
                 margin-bottom: 20px;
                 text-align: center;
+
+                // background-position: left;
 
                 h3 {
                     color: #fff;

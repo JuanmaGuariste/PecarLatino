@@ -166,14 +166,7 @@
                     }
                 }
             }
-        }
-        //-------------------Sobre nosotros-------------------
-        .sobrenosotros {
-            // padding-top: 10%;
-            // padding-bottom: 10%;
-            
-
-        }
+        }   
 
         //-------------------Muebles-------------------
         .muebles {
@@ -433,8 +426,10 @@
                 }
             }
         }
-
-
+        //--------------------sobre nosotros------------
+        .sobrenosotros {           
+            background-image: none;     
+        }
         //-------------------Muebles-------------------
         .muebles {
             .carousel {

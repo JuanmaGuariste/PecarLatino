@@ -55,12 +55,10 @@ main {
         // background-color: #F5EAD4;
         padding: 5% 15%;
         margin-top: 2%;
-        background-color: #F5EAD4; // Color de fondo
-        background-image: url('../assents/asdasdo.png'); // Ruta de la imagen de fondo
-        background-size: cover; // Ajusta la imagen para cubrir todo el contenedor
-        background-position: center; // Centra la imagen de fondo
+        background-image: url('../assents/fondo.png'); 
+        background-size: cover; 
+        background-position: left;
         background-color: rgba(245, 234, 212, 0.8);
-        // padding: 5%;
         gap: 20px;
         height: auto;
         margin-left: 5%;

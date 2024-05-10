@@ -111,10 +111,9 @@ main {
   main .sobrenosotros {
     padding: 5% 15%;
     margin-top: 2%;
-    background-color: #F5EAD4;
-    background-image: url("../assents/asdasdo.png");
+    background-image: url("../assents/fondo.png");
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-color: rgba(245, 234, 212, 0.8);
     gap: 20px;
     height: auto;
@@ -769,6 +768,8 @@ footer {
   main {
     /**----------------------------------------MAIN muebles------------------------ **/
     /* Modal */ }
+    main .sobrenosotros {
+      background-image: none; }
     main .muebles .carousel .carousel-inner .carousel-item .carousel-text {
       font-size: 30px; }
     main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .descubribtn {

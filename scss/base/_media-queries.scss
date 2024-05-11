@@ -166,7 +166,7 @@
                     }
                 }
             }
-        }   
+        }
 
         //-------------------Muebles-------------------
         .muebles {
@@ -202,6 +202,9 @@
                     margin-bottom: 0;
                     padding-right: 10%;
                     padding-left: 10%;
+                    background-image: url('../assents/index/deco/fondo-deco.png');
+
+                    background-size: cover;
 
                     h3 {
                         font-size: 20px;
@@ -359,6 +362,33 @@
 
             }
         }
+
+        //------------------Main Contacto------------------------   
+        .contacto-container {
+            .contacto-content {
+                .titulo {
+                    font-size: 30px;
+                }
+
+                .botones {
+                    .contacto-btn {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .ubicacion {
+            h2 {
+                font-size: 30px;
+            }
+
+            .ubicacion-map {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 
     //-------------------Footer-------------------
@@ -426,10 +456,12 @@
                 }
             }
         }
+
         //--------------------sobre nosotros------------
-        .sobrenosotros {           
-            background-image: none;     
+        .sobrenosotros {
+            background-image: none;
         }
+
         //-------------------Muebles-------------------
         .muebles {
             .carousel {
@@ -450,6 +482,15 @@
             }
         }
 
+        //-------------------Deco-------------------  
+        .section_deco {
+            .card_deco {
+                .text_deco {
+                    background-image: none;
+                }
+            }
+        }
+
         /**----------------------------------------MAIN muebles------------------------ **/
 
         /* Modal */
@@ -457,7 +498,7 @@
             .modal-content {
                 .modal-container {
                     .modal-text {
-                        max-width: 80%;                       
+                        max-width: 80%;
                     }
                 }
 
@@ -566,6 +607,35 @@
                     }
                 }
 
+            }
+        }
+
+        //------------------Main Contacto------------------------   
+        .contacto-container {
+            .contacto-content {
+                .titulo {
+                    font-size: 20px;
+                }
+
+                .botones {
+                    .contacto-btn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .ubicacion {
+            padding-left: 5px;
+            padding-right: 5px;
+            h2 {
+                font-size: 20px;
+            }
+
+            .ubicacion-map {
+                p {
+                    font-size: 12px;
+                }
             }
         }
     }

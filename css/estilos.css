@@ -73,6 +73,7 @@ main {
   grid-area: main;
   background-color: #ffff;
   margin: 0 auto;
+  margin-top: 0px;
   /* Index - Muebles */
   /* Index -Ambientaciones */
   /* Index - Deco */
@@ -86,7 +87,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    max-width: 90%;
+    width: 90%;
     position: relative;
     margin: 0 auto; }
     main .hero .parallax .carousel-item {
@@ -172,17 +173,22 @@ main {
         left: 50%;
         transform: translateX(-50%);
         z-index: 1; }
-    main .muebles .descubribtn {
-      border-radius: 40px;
-      margin-bottom: 30%;
-      background-color: white;
-      color: #7b421b;
-      border: none;
-      font-size: 18px;
-      font-weight: bolder;
-      cursor: pointer; }
-    main .muebles .descubribtn:hover {
-      background-color: #f0f0f0; }
+        main .muebles .carousel-inner .carousel-item .button .descubribtn {
+          border-radius: 40px;
+          margin-bottom: 30%;
+          background-color: white;
+          color: #7b421b;
+          border: none;
+          font-size: 18px;
+          font-weight: bolder;
+          cursor: pointer; }
+          main .muebles .carousel-inner .carousel-item .button .descubribtn a {
+            text-decoration: none;
+            color: #7b421b;
+            font-weight: bolder;
+            font-size: 18px; }
+        main .muebles .carousel-inner .carousel-item .button .descubribtn:hover {
+          background-color: #f0f0f0; }
   main .ambientaciones .title {
     color: #7b421b;
     margin-top: 2%;
@@ -225,6 +231,10 @@ main {
         border-radius: 0 0 10px 10px;
         transition: background-color 0.3s ease;
         cursor: pointer; }
+        main .ambientaciones .card-group-ambientaciones .card .btn a {
+          text-decoration: none;
+          color: white;
+          font-weight: bolder; }
         main .ambientaciones .card-group-ambientaciones .card .btn:hover {
           background-color: #593527; }
   main .ambientaciones .divider {
@@ -277,8 +287,12 @@ main {
           font-size: 20px;
           font-weight: bolder;
           cursor: pointer; }
-        main .section_deco .card_deco .text_deco .card_deco_btn:hover {
-          background-color: #f0f0f0; }
+          main .section_deco .card_deco .text_deco .card_deco_btn a {
+            text-decoration: none;
+            color: #7b421b;
+            font-weight: bolder; }
+          main .section_deco .card_deco .text_deco .card_deco_btn:hover {
+            background-color: #f0f0f0; }
   main .section_proyectos {
     background-color: #f5ead4;
     max-width: 80%;
@@ -318,8 +332,12 @@ main {
           font-size: 20px;
           font-weight: bolder;
           cursor: pointer; }
-        main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn:hover {
-          background-color: #f0f0f0; }
+          main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn a {
+            text-decoration: none;
+            color: #7b421b;
+            font-weight: bolder; }
+          main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn:hover {
+            background-color: #f0f0f0; }
       main .section_proyectos .card_proyectos .img_proyectos {
         flex: 1 0 50%;
         width: 50%;
@@ -526,6 +544,76 @@ main {
       cursor: pointer; }
       main .modal .close:hover, main .modal .close:focus {
         color: #333; }
+  main .ambientaciones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    background-color: #F5EAD4;
+    padding-bottom: 5%; }
+    main .ambientaciones .title-ambientaciones {
+      color: #7b421b;
+      font-size: 40px;
+      text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      margin-top: 5%;
+      font-weight: bolder; }
+    main .ambientaciones .ambientacion {
+      width: 70%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 2%; }
+      main .ambientaciones .ambientacion .contenido {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2%; }
+        main .ambientaciones .ambientacion .contenido h3 {
+          position: absolute;
+          font-size: 50px;
+          bottom: 80px; }
+        main .ambientaciones .ambientacion .contenido .button {
+          position: absolute;
+          top: 150px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1; }
+          main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn {
+            border-radius: 40px;
+            margin-bottom: 30%;
+            background-color: white;
+            color: #7b421b;
+            border: none;
+            font-size: 18px;
+            font-weight: bolder;
+            cursor: pointer; }
+            main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn a {
+              text-decoration: none;
+              color: #7b421b;
+              font-weight: bolder;
+              font-size: 18px; }
+          main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn:hover {
+            background-color: #f0f0f0; }
+    main .ambientaciones .living {
+      background-image: url("../assents/ambientaciones/living/Living.png"); }
+    main .ambientaciones .comedor {
+      background-image: url("../assents/ambientaciones/comedor/comedor.png"); }
+    main .ambientaciones .dormitorio {
+      background-image: url("../assents/ambientaciones/dormitorio/dormitorio.png"); }
   main .contacto-container {
     background-image: url("../assents/contacto/fondo-contacto.jpg");
     background-size: cover;
@@ -625,7 +713,7 @@ main {
   line-height: 100px; }
 
 .fixed a:hover {
-  background-color: #128c7e; }
+  background-color: #1da851; }
 
 .fixed img {
   width: 70px;
@@ -724,6 +812,12 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
     font-size: 20px; }
+  main .ambientaciones .ambientacion {
+    height: 400px; }
+    main .ambientaciones .ambientacion .contenido h3 {
+      bottom: 70px; }
+    main .ambientaciones .ambientacion .contenido .button {
+      top: 100px; }
   footer .grupo-1 .box a .img_box {
     width: 120px; }
   footer .grupo-1 .box_1 .title_box_1 {
@@ -827,6 +921,21 @@ footer {
         font-size: 14px; }
       main .modal .modal-content .modal-container .modal-text a {
         font-size: 14px; }
+    main .ambientaciones .title-ambientaciones {
+      font-size: 30px; }
+    main .ambientaciones .ambientacion {
+      height: 300px; }
+      main .ambientaciones .ambientacion .contenido h3 {
+        font-size: 35px;
+        bottom: 45px; }
+      main .ambientaciones .ambientacion .contenido .button {
+        top: 80px; }
+        main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn {
+          font-size: 18px;
+          padding: 8px;
+          width: 170px; }
+          main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn a {
+            font-size: 14px; }
     main .contacto-container .contacto-content .titulo {
       font-size: 30px; }
     main .contacto-container .contacto-content .botones .contacto-btn {
@@ -861,14 +970,35 @@ footer {
     /* Modal */ }
     main .sobrenosotros {
       background-image: none; }
-    main .muebles .carousel .carousel-inner .carousel-item .carousel-text {
+    main .muebles {
+      padding: 3% 5%; }
+      main .muebles .carousel .carousel-inner .carousel-item .carousel-text {
+        font-size: 30px; }
+      main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .descubribtn {
+        margin-bottom: 5%;
+        padding: 4px; }
+    main .ambientaciones .title-ambientaciones {
       font-size: 30px; }
-    main .muebles .carousel .carousel-inner .carousel-item .carousel-caption .descubribtn {
-      margin-bottom: 5%; }
+    main .ambientaciones .ambientacion {
+      height: 200px; }
+      main .ambientaciones .ambientacion .contenido h3 {
+        font-size: 25px;
+        bottom: 30px; }
+      main .ambientaciones .ambientacion .contenido .button {
+        top: 40px; }
+        main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn a {
+          font-size: 12px; }
     main .section_deco .card_deco .text_deco {
       background-image: none; }
     main .modal .modal-content .modal-container .modal-text {
-      max-width: 80%; } }
+      max-width: 80%; }
+  /**----------------------------------------LOGO FLOTANTE------------------------ **/
+  .fixed a {
+    width: 70px;
+    height: 70px;
+    line-height: 70px; }
+  .fixed img {
+    width: 50px; } }
 
 @media screen and (max-width: 400px) {
   header .container-fluid .navbar-toggler {
@@ -889,6 +1019,23 @@ footer {
         max-width: 90%; }
       main .imagenes_sobre_nosotros .sobre_nosotros_img .img_sec {
         display: none; }
+    main .section_deco .card_deco {
+      width: 100%; }
+      main .section_deco .card_deco .text_deco {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center; }
+        main .section_deco .card_deco .text_deco .p_deco {
+          width: 100%;
+          margin-left: 0px;
+          margin-right: 0px; }
+        main .section_deco .card_deco .text_deco .card_deco_btn {
+          width: 150px; }
+    main .section_proyectos {
+      max-width: 90%; }
+      main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
+        width: 150px; }
     main .imagenes_muebles .muebles_title {
       font-size: 25px; }
     main .grupo_muebles .muebles_img .myBtn .mueble-text {
@@ -903,6 +1050,18 @@ footer {
       font-size: 14px; }
     main .modal .modal-content .modal-container .modal-text a {
       font-size: 14px; }
+    main .ambientaciones .title-ambientaciones {
+      font-size: 18px; }
+    main .ambientaciones .ambientacion {
+      height: 200px;
+      width: 90%; }
+      main .ambientaciones .ambientacion .contenido .button {
+        padding: 0px; }
+        main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn {
+          padding: 5px;
+          width: 120px; }
+          main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn a {
+            font-size: 12px; }
     main .contacto-container .contacto-content .titulo {
       font-size: 20px; }
     main .contacto-container .contacto-content .botones .contacto-btn {

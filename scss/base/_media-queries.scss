@@ -110,6 +110,25 @@
                 }
             }
         }
+
+        //------------------Main ambientaciones------------------------
+        .ambientaciones {
+            .title-ambientaciones {}
+
+            .ambientacion {
+                height: 400px; // Alto de cada ambientación      
+
+                .contenido {
+                    h3 {
+                        bottom: 70px;
+                    }
+
+                    .button {
+                        top: 100px;
+                    }
+                }
+            }
+        }
     }
 
 
@@ -363,6 +382,43 @@
             }
         }
 
+        //------------------Main ambientaciones------------------------
+        .ambientaciones {
+            .title-ambientaciones {
+                font-size: 30px;
+            }
+
+            .ambientacion {
+                height: 300px; // Alto de cada ambientación      
+
+                .contenido {
+                    h3 {
+                        font-size: 35px;
+                        bottom: 45px
+                    }
+
+                    .button {
+                        top: 80px;
+
+
+                        .ambientaciones-btn {
+                            font-size: 18px;
+                            padding: 8px;
+                            width: 170px;
+
+
+                            a {
+
+                                font-size: 14px;
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         //------------------Main Contacto------------------------   
         .contacto-container {
             .contacto-content {
@@ -464,6 +520,8 @@
 
         //-------------------Muebles-------------------
         .muebles {
+            padding: 3% 5%;
+
             .carousel {
                 .carousel-inner {
                     .carousel-item {
@@ -474,10 +532,48 @@
                         .carousel-caption {
                             .descubribtn {
                                 margin-bottom: 5%;
+                                padding: 4px;
                             }
                         }
                     }
 
+                }
+            }
+        }
+
+        //------------------Main ambientaciones------------------------
+        .ambientaciones {
+            .title-ambientaciones {
+                font-size: 30px;
+            }
+
+            .ambientacion {
+                height: 200px; // Alto de cada ambientación      
+
+                .contenido {
+                    h3 {
+                        font-size: 25px;
+                        bottom: 30px
+                    }
+
+                    .button {
+                        top: 40px;
+
+
+                        .ambientaciones-btn {
+                            // font-size: 18px;
+                            // padding: 8px;
+                            // width: 170px;
+
+
+                            a {
+
+                                font-size: 12px;
+
+
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -504,6 +600,18 @@
 
             }
         }
+    }
+
+    /**----------------------------------------LOGO FLOTANTE------------------------ **/
+    .fixed a {
+
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .fixed img {
+        width: 50px;
     }
 }
 
@@ -561,6 +669,44 @@
             }
         }
 
+        //-------------------------index - Deco---------------------
+        .section_deco {
+            .card_deco {
+                width: 100%;
+
+                .text_deco {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 100%;
+                    align-items: center;
+
+                    .p_deco {
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
+
+                    .card_deco_btn {
+                        width: 150px;
+                    }
+
+                }
+            }
+        }
+
+        .section_proyectos {
+            max-width: 90%;
+
+            .card_proyectos {
+                .text_proyectos {
+                    .card_proyectos_btn {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+
         /**----------------------------------------MAIN muebles------------------------ **/
         .imagenes_muebles {
             .muebles_title {
@@ -610,6 +756,35 @@
             }
         }
 
+        //------------------Main ambientaciones------------------------
+        .ambientaciones {
+            .title-ambientaciones {
+                font-size: 18px;
+            }
+
+            .ambientacion {
+                height: 200px;
+                width: 90%;
+
+                .contenido {
+                    h3 {}
+
+                    .button {
+                        padding: 0px;
+
+                        .ambientaciones-btn {
+                            padding: 5px;
+                            width: 120px;
+
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         //------------------Main Contacto------------------------   
         .contacto-container {
             .contacto-content {
@@ -628,6 +803,7 @@
         .ubicacion {
             padding-left: 5px;
             padding-right: 5px;
+
             h2 {
                 font-size: 20px;
             }

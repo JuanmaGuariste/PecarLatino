@@ -524,9 +524,9 @@ main {
         .sobre_nosotros_img_principal {
             display: flex;
             justify-content: center;
-
             img {
                 width: 100%;
+                border-radius: 2%;
             }
         }
     }
@@ -628,12 +628,14 @@ main {
 
                 .modal-image {
                     flex: 1;
-                    max-width: 50%;
                     padding: 10px;
-
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
                     img {
                         height: 400px;
-                        max-width: 80%;
+                        max-width: 90%;
                         display: block;
                         margin: 0 auto;
                     }

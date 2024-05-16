@@ -612,11 +612,11 @@ main {
           main .ambientaciones .ambientacion .contenido .button .ambientaciones-btn:hover {
             background-color: #f0f0f0; }
     main .ambientaciones .living {
-      background-image: url("../assents/ambientaciones/living/Living.png"); }
+      background-image: url("../assents/ambientaciones/living/Living.jpg"); }
     main .ambientaciones .comedor {
-      background-image: url("../assents/ambientaciones/comedor/comedor.png"); }
+      background-image: url("../assents/ambientaciones/comedor/comedor.jpg"); }
     main .ambientaciones .dormitorio {
-      background-image: url("../assents/ambientaciones/dormitorio/dormitorio.png"); }
+      background-image: url("../assents/ambientaciones/dormitorio/dormitorio.jpg"); }
   main .contacto-container {
     background-image: url("../assents/contacto/fondo-contacto.jpg");
     background-size: cover;

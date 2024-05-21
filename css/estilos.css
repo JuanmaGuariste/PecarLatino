@@ -102,7 +102,7 @@ main {
         position: absolute;
         text-align: left;
         top: 25%;
-        z-index: 1001;
+        z-index: 1;
         text-shadow: #000000 0.1em 0.1em 0.2em; }
       main .hero .parallax .carousel-item img {
         opacity: 0.5;

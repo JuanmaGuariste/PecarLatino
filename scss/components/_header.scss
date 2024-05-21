@@ -5,7 +5,7 @@ header {
   grid-area: header;
   color: #412C25;
   font-size: 14px;
-  
+
   .container-fluid {
     background-color: rgb(255, 255, 255);
     width: 90%;
@@ -25,19 +25,23 @@ header {
     display: flex;
     flex-grow: 1;
 
+
     .nav-item {
       flex-grow: 1;
       margin-left: 5%;
+
 
       a {
         font-weight: bolder;
         color: #000000;
       }
-      .active-nav{
+
+      .active-nav {
         color: #FAA51A;
 
       }
     }
+
   }
 
 

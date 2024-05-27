@@ -351,8 +351,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 2%; }
+    margin: 0 auto; }
     main .section_exp_pecar .card_exp_pecar {
       display: flex;
       flex-wrap: wrap;
@@ -375,8 +374,7 @@ main {
     gap: 20px;
     height: auto;
     margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%; }
+    margin-right: 5%; }
     main .imagenes_sobre_nosotros .divider {
       border-top: 2px solid #7b421b;
       width: 70%;
@@ -556,7 +554,6 @@ main {
     gap: 20px;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 2%;
     background-color: #F5EAD4;
     padding-bottom: 5%; }
     main .ambientaciones .title-ambientaciones {
@@ -677,7 +674,6 @@ main {
     text-align: center;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 2%;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3); }
     main .ubicacion h2 {
       color: #7b421b;
@@ -733,7 +729,8 @@ footer {
   background-color: #CF5D20;
   color: #EDEDED;
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 2%; }
   footer .grupo-1 {
     display: flex;
     flex-direction: row;

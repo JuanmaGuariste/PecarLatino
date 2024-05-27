@@ -486,7 +486,7 @@ main {
       margin: 10% auto;
       padding: 20px;
       border: 1px solid #888;
-      max-width: 700px;
+      max-width: 800px;
       width: 90%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -501,7 +501,7 @@ main {
           align-items: center;
           justify-content: center; }
           main .modal .modal-content .modal-container .modal-image img {
-            height: 400px;
+            height: auto;
             max-width: 90%;
             display: block;
             margin: 0 auto; }
@@ -521,7 +521,8 @@ main {
             padding-top: 0px; }
           main .modal .modal-content .modal-container .modal-text h2 {
             margin-bottom: 0%;
-            margin-top: 2%; }
+            margin-top: 2%;
+            text-align: center; }
           main .modal .modal-content .modal-container .modal-text h3 {
             margin-bottom: 0%;
             margin-top: 5%;
@@ -887,15 +888,18 @@ footer {
           margin-bottom: 5%;
           margin-top: 5%;
           font-size: 25px; }
-    main .imagenes_sobre_nosotros .sobre_nosotros_title {
-      font-size: 30px; }
-    main .imagenes_sobre_nosotros .sobre_nosotros_text p {
-      font-size: 14px; }
-    main .imagenes_sobre_nosotros .sobre_nosotros_img {
-      flex-direction: column;
-      align-items: center; }
-      main .imagenes_sobre_nosotros .sobre_nosotros_img img {
-        max-width: 90%; }
+    main .imagenes_sobre_nosotros {
+      padding-left: 5%;
+      padding-right: 5%; }
+      main .imagenes_sobre_nosotros .sobre_nosotros_title {
+        font-size: 30px; }
+      main .imagenes_sobre_nosotros .sobre_nosotros_text p {
+        font-size: 14px; }
+      main .imagenes_sobre_nosotros .sobre_nosotros_img {
+        flex-direction: column;
+        align-items: center; }
+        main .imagenes_sobre_nosotros .sobre_nosotros_img img {
+          max-width: 100%; }
     main .imagenes_muebles .muebles_title {
       font-size: 30px; }
     main .grupo_muebles .muebles_img {
@@ -993,6 +997,23 @@ footer {
           font-size: 12px; }
     main .section_deco .card_deco .text_deco {
       background-image: none; }
+    main .imagenes_muebles {
+      padding-left: 0px;
+      padding-right: 0px; }
+      main .imagenes_muebles .muebles_title {
+        font-size: 20px; }
+      main .imagenes_muebles .sobre_nosotros_img_principal {
+        max-width: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px; }
+        main .imagenes_muebles .sobre_nosotros_img_principal .img_sec {
+          max-width: 80%;
+          margin: 0px;
+          padding: 0px; }
+    main .grupo_muebles .muebles_img .myBtn {
+      max-width: 100%;
+      width: 100%; }
     main .modal .modal-content .modal-container .modal-text {
       max-width: 80%; }
   /**----------------------------------------LOGO FLOTANTE------------------------ **/
@@ -1040,7 +1061,7 @@ footer {
       main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
         width: 150px; }
     main .imagenes_muebles .muebles_title {
-      font-size: 25px; }
+      font-size: 15px; }
     main .grupo_muebles .muebles_img .myBtn .mueble-text {
       font-size: 16px; }
     main .modal .modal-content .modal-container .modal-text p {

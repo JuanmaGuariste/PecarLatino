@@ -298,11 +298,15 @@
         //------------------------Sobre nosotros------------------------
 
         .imagenes_sobre_nosotros {
+            // max-width: 80%;
+            padding-left: 5%;
+            padding-right: 5%;
             .sobre_nosotros_title {
                 font-size: 30px;
             }
 
             .sobre_nosotros_text {
+                // width: 100%;
                 p {
                     font-size: 14px;
                 }
@@ -313,7 +317,7 @@
                 align-items: center;
 
                 img {
-                    max-width: 90%;
+                    max-width: 100%;
                 }
             }
         }
@@ -588,6 +592,39 @@
         }
 
         /**----------------------------------------MAIN muebles------------------------ **/
+        .imagenes_muebles {
+            padding-left: 0px;
+            padding-right: 0px;
+            // margin: 50px;
+            .muebles_title {
+                font-size: 20px;
+            }
+            .sobre_nosotros_img_principal{
+
+                max-width: 100%;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+                .img_sec{
+                    max-width: 80%;
+                 margin: 0px;
+                 padding: 0px;
+                    
+                }
+            }
+            
+        }
+        .grupo_muebles {
+            .muebles_img {
+
+                .myBtn {
+                    max-width: 100%;
+                    width: 100%;
+                    .mueble-text {
+                    }
+                }
+            }
+        }
 
         /* Modal */
         .modal {
@@ -710,12 +747,13 @@
         /**----------------------------------------MAIN muebles------------------------ **/
         .imagenes_muebles {
             .muebles_title {
-                font-size: 25px;
+                font-size: 15px;
             }
         }
 
         .grupo_muebles {
             .muebles_img {
+
                 .myBtn {
                     .mueble-text {
                         font-size: 16px;

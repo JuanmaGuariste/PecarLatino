@@ -24,7 +24,6 @@ main {
             width: 90%;
             position: relative;
             margin: 0 auto;
-            
 
             .carousel-item {
                 background-color: rgba(0, 0, 0, 1.5);
@@ -41,7 +40,6 @@ main {
                     top: 25%;
                     z-index: 1;
                     text-shadow: #000000 0.1em 0.1em 0.2em;
-
                 }
 
                 img {
@@ -55,7 +53,6 @@ main {
     }
 
     .sobrenosotros {
-        // background-color: #F5EAD4;
         padding: 5% 15%;
         margin-top: 2%;
         background-image: url('../assents/fondo.png');
@@ -102,7 +99,6 @@ main {
                 }
             }
         }
-
     }
 
     /* Index - Muebles */
@@ -160,10 +156,7 @@ main {
                             color: #7b421b;
                             font-weight: bolder;
                             font-size: 18px;
-
-
                         }
-
                     }
 
                     .descubribtn:hover {
@@ -172,14 +165,10 @@ main {
                 }
             }
         }
-
-
     }
 
     /* Index -Ambientaciones */
     .ambientaciones {
-
-        // padding-bottom: 0%;
         .title {
             color: #7b421b;
             margin-top: 2%;
@@ -256,10 +245,8 @@ main {
         }
     }
 
-
     /* Index - Deco */
     .section_deco {
-        // background-color: #CF5D20;
         max-width: 90%;
         margin: 0 auto;
         margin-top: 2%;
@@ -270,7 +257,6 @@ main {
             justify-content: center;
             align-items: center;
             background-image: url('../assents/index/deco/fondo-deco.png');
-
             background-size: cover;
 
             .img_deco {
@@ -290,8 +276,6 @@ main {
                 padding: 2%;
                 margin-bottom: 20px;
                 text-align: center;
-
-                // background-position: left;
 
                 h3 {
                     color: #fff;
@@ -337,7 +321,6 @@ main {
     }
 
     /* Index - Proyectos a medida */
-
     .section_proyectos {
         background-color: #f5ead4;
         max-width: 80%;
@@ -390,15 +373,12 @@ main {
                         text-decoration: none;
                         color: #7b421b;
                         font-weight: bolder;
-
                     }
 
                     &:hover {
                         background-color: #f0f0f0;
-
                     }
                 }
-
             }
 
             .img_proyectos {
@@ -416,7 +396,6 @@ main {
     }
 
     //------------------------Index Experiencia pecar latino------------------------
-
     .section_exp_pecar {
         display: flex;
         justify-content: space-between;
@@ -442,11 +421,8 @@ main {
             .img_exp_pecar_2 {
                 width: 50%;
                 box-sizing: border-box;
-                // background-color: #f5ead4;
-
 
                 img {
-                    // margin-top: 0%;
                     width: 100%;
                     height: auto;
                 }
@@ -470,7 +446,6 @@ main {
             margin-top: 10%;
             margin-bottom: 7%;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-
         }
 
         .sobre_nosotros_title {
@@ -480,11 +455,9 @@ main {
             text-align: center;
             margin-bottom: 5%;
             font-weight: bolder;
-
         }
 
         .sobre_nosotros_text {
-
             p {
                 text-align: justify;
                 color: #7b421b;
@@ -549,14 +522,12 @@ main {
         width: 90%;
 
         .muebles_img {
-
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 20px;
             width: 70%;
             cursor: pointer;
-
 
             .myBtn {
                 background-color: #F5EAD4;
@@ -582,7 +553,6 @@ main {
 
                 .mueble-description {
                     display: none;
-
                 }
 
                 .mueble-sub-title {
@@ -616,7 +586,6 @@ main {
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
         transition: 0.3s;
-
 
         .modal-content {
             display: flex;
@@ -693,9 +662,7 @@ main {
                         margin-top: 10%
                     }
                 }
-
             }
-
         }
 
         .close {
@@ -712,22 +679,19 @@ main {
                 color: #333;
             }
         }
-
     }
 
     //------------------Main ambientaciones------------------------
-
     .ambientaciones {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        gap: 20px; // Espacio entre las ambientaciones
+        gap: 20px; 
         width: 90%;
         margin: 0 auto;
         background-color: #F5EAD4;
         padding-bottom: 5%;
-
 
         .title-ambientaciones {
             color: #7b421b;
@@ -739,35 +703,30 @@ main {
         }
 
         .ambientacion {
-            width: 70%; // Ancho de cada ambientación
-            height: 600px; // Alto de cada ambientación
+            width: 70%; 
+            height: 600px; 
             background-size: cover;
             background-position: center;
             border-radius: 10px;
-            overflow: hidden; // Evita que el contenido sobresalga
-            position: relative; // Permite posicionar el contenido interno
+            overflow: hidden; 
+            position: relative; 
             margin-top: 2%;
-            // padding-bottom: 300px;
 
             .contenido {
-                position: absolute; // Permite posicionar el contenido interno respecto al contenedor
-                top: 50%; // Lo sitúa en la mitad del contenedor verticalmente
-                left: 50%; // Lo sitúa en la mitad del contenedor horizontalmente
-                transform: translate(-50%, -50%); // Lo ajusta para centrarlo
-                text-align: center; // Centra el texto horizontalmente
-                color: #fff; // Color del texto
+                position: absolute; 
+                top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%); 
+                text-align: center;
+                color: #fff;
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-around;
                 align-items: center;
                 padding-bottom: 2%;
-
-
 
                 h3 {
                     position: absolute;
                     font-size: 50px;
-                    // margin-bottom: 10px; // Espacio entre el título y el botón
                     bottom: 80px;
                 }
 
@@ -788,29 +747,23 @@ main {
                         font-weight: bolder;
                         cursor: pointer;
 
-
                         a {
                             text-decoration: none;
                             color: #7b421b;
                             font-weight: bolder;
                             font-size: 18px;
-
-
                         }
-
                     }
 
                     .ambientaciones-btn:hover {
                         background-color: #f0f0f0;
                     }
                 }
-
             }
         }
 
         .living {
             background-image: url('../assents/ambientaciones/living/Living.jpg');
-
         }
 
         .comedor {
@@ -821,11 +774,6 @@ main {
             background-image: url('../assents/ambientaciones/dormitorio/dormitorio.jpg');
         }
     }
-
-
-
-
-
 
     //------------------Main Contacto------------------------   
     .contacto-container {
@@ -921,7 +869,6 @@ main {
         }
 
         .ubicacion-map {
-
             iframe {
                 border: none;
                 width: 100%;
@@ -929,8 +876,6 @@ main {
                 height: 400px;
                 border-radius: 10px;
                 box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-
-
             }
 
             p {
@@ -944,9 +889,6 @@ main {
         }
     }
 }
-
-
-
 
 /**----------------------------------------LOGO FLOTANTE------------------------ **/
 .fixed {
@@ -968,7 +910,6 @@ main {
 }
 
 .fixed a:hover {
-    // background-color: #128c7e;
     background-color: darken(#25D366, 10%);
 }
 

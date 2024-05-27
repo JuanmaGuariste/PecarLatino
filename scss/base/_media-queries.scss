@@ -18,7 +18,6 @@
 
         //-------------------Sobre Nosotros-------------------
         .sobrenosotros {
-
             .title {
                 h2 {
                     font-size: 25px;
@@ -86,26 +85,13 @@
         }
 
         //------------------------Experiencia pecar latino------------------------
-
         .section_exp_pecar {
-
-
             .card_exp_pecar {
-
-                .img_exp_pecar {
-
-                    img {}
-                }
-
                 .img_exp_pecar_2 {
-
-                    img {}
-
                     p {
                         margin-left: 5%;
                         margin-right: 5%;
                         font-size: 20px;
-
                     }
                 }
             }
@@ -113,10 +99,8 @@
 
         //------------------Main ambientaciones------------------------
         .ambientaciones {
-            .title-ambientaciones {}
-
             .ambientacion {
-                height: 400px; // Alto de cada ambientación      
+                height: 400px;
 
                 .contenido {
                     h3 {
@@ -130,8 +114,6 @@
             }
         }
     }
-
-
 
     //-------------------Footer-------------------
     footer {
@@ -222,7 +204,6 @@
                     padding-right: 10%;
                     padding-left: 10%;
                     background-image: url('../assents/index/deco/fondo-deco.png');
-
                     background-size: cover;
 
                     h3 {
@@ -296,17 +277,16 @@
         }
 
         //------------------------Sobre nosotros------------------------
-
         .imagenes_sobre_nosotros {
-            // max-width: 80%;
             padding-left: 5%;
             padding-right: 5%;
+
             .sobre_nosotros_title {
                 font-size: 30px;
             }
 
             .sobre_nosotros_text {
-                // width: 100%;
+
                 p {
                     font-size: 14px;
                 }
@@ -321,7 +301,6 @@
                 }
             }
         }
-
 
         /**----------------------------------------MAIN muebles------------------------ **/
         .imagenes_muebles {
@@ -393,7 +372,7 @@
             }
 
             .ambientacion {
-                height: 300px; // Alto de cada ambientación      
+                height: 300px;
 
                 .contenido {
                     h3 {
@@ -404,18 +383,13 @@
                     .button {
                         top: 80px;
 
-
                         .ambientaciones-btn {
                             font-size: 18px;
                             padding: 8px;
                             width: 170px;
 
-
                             a {
-
                                 font-size: 14px;
-
-
                             }
                         }
                     }
@@ -506,17 +480,6 @@
 
     main {
 
-        //-------------------Hero-------------------
-        .hero {
-            #carouselExampleSlidesOnly {
-                .carousel-inner {
-                    .carousel-item {
-                        .heroH1 {}
-                    }
-                }
-            }
-        }
-
         //--------------------sobre nosotros------------
         .sobrenosotros {
             background-image: none;
@@ -563,18 +526,9 @@
                     .button {
                         top: 40px;
 
-
                         .ambientaciones-btn {
-                            // font-size: 18px;
-                            // padding: 8px;
-                            // width: 170px;
-
-
                             a {
-
                                 font-size: 12px;
-
-
                             }
                         }
                     }
@@ -595,33 +549,30 @@
         .imagenes_muebles {
             padding-left: 0px;
             padding-right: 0px;
-            // margin: 50px;
+
             .muebles_title {
                 font-size: 20px;
             }
-            .sobre_nosotros_img_principal{
 
+            .sobre_nosotros_img_principal {
                 max-width: 100%;
                 width: 100%;
                 padding: 0px;
                 margin: 0px;
-                .img_sec{
+
+                .img_sec {
                     max-width: 80%;
-                 margin: 0px;
-                 padding: 0px;
-                    
+                    margin: 0px;
+                    padding: 0px;
                 }
             }
-            
         }
+
         .grupo_muebles {
             .muebles_img {
-
                 .myBtn {
                     max-width: 100%;
                     width: 100%;
-                    .mueble-text {
-                    }
                 }
             }
         }
@@ -634,14 +585,12 @@
                         max-width: 80%;
                     }
                 }
-
             }
         }
     }
 
     /**----------------------------------------LOGO FLOTANTE------------------------ **/
     .fixed a {
-
         width: 70px;
         height: 70px;
         line-height: 70px;
@@ -654,7 +603,6 @@
 
 @media screen and (max-width: 400px) {
     header {
-
         .container-fluid {
             .navbar-toggler {
                 width: 50px;
@@ -680,7 +628,6 @@
         //------------------------Sobre nosotros------------------------
 
         .imagenes_sobre_nosotros {
-
             .sobre_nosotros_title {
                 font-size: 25px;
             }
@@ -753,7 +700,6 @@
 
         .grupo_muebles {
             .muebles_img {
-
                 .myBtn {
                     .mueble-text {
                         font-size: 16px;
@@ -805,8 +751,6 @@
                 width: 90%;
 
                 .contenido {
-                    h3 {}
-
                     .button {
                         padding: 0px;
 

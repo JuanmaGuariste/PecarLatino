@@ -196,11 +196,12 @@ main {
   main .ambientaciones .card-group-ambientaciones {
     gap: 20px;
     padding: 2% 5%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 0%; }
     main .ambientaciones .card-group-ambientaciones .card {
       position: relative;
       overflow: hidden;
@@ -244,7 +245,8 @@ main {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
   main .section_deco {
     max-width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 2%; }
     main .section_deco .card_deco {
       display: flex;
       flex-wrap: wrap;

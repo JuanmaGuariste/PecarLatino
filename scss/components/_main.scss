@@ -189,11 +189,12 @@ main {
         .card-group-ambientaciones {
             gap: 20px;
             padding: 2% 5%;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            padding-bottom: 0%;
 
             .card {
                 position: relative;
@@ -261,6 +262,7 @@ main {
         // background-color: #CF5D20;
         max-width: 90%;
         margin: 0 auto;
+        margin-top: 2%;
 
         .card_deco {
             display: flex;

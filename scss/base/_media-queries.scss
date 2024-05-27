@@ -480,9 +480,34 @@
 
     main {
 
-        //--------------------sobre nosotros------------
+        //--------------------Index - Sobre nosotros------------
         .sobrenosotros {
             background-image: none;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        //--------------------Index - Deco------------
+        .section_deco {
+
+            .card_deco {
+                .text_deco {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+            }
+        }
+
+        /* Index - Proyectos a medida */
+        .section_proyectos {
+
+            .card_proyectos {
+
+                .text_proyectos {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+            }
         }
 
         //-------------------Muebles-------------------

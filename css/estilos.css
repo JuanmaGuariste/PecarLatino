@@ -972,10 +972,19 @@ footer {
   header .container-fluid .navbar-toggler {
     width: 150px; }
   main {
+    /* Index - Proyectos a medida */
     /**----------------------------------------MAIN muebles------------------------ **/
     /* Modal */ }
     main .sobrenosotros {
-      background-image: none; }
+      background-image: none;
+      padding-left: 5%;
+      padding-right: 5%; }
+    main .section_deco .card_deco .text_deco {
+      padding-left: 5%;
+      padding-right: 5%; }
+    main .section_proyectos .card_proyectos .text_proyectos {
+      padding-left: 5%;
+      padding-right: 5%; }
     main .muebles {
       padding: 3% 5%; }
       main .muebles .carousel .carousel-inner .carousel-item .carousel-text {

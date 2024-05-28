@@ -982,9 +982,11 @@ footer {
     main .section_deco .card_deco .text_deco {
       padding-left: 5%;
       padding-right: 5%; }
-    main .section_proyectos .card_proyectos .text_proyectos {
-      padding-left: 5%;
-      padding-right: 5%; }
+    main .section_proyectos {
+      max-width: 90%; }
+      main .section_proyectos .card_proyectos .text_proyectos {
+        padding-left: 5%;
+        padding-right: 5%; }
     main .muebles {
       padding: 3% 5%; }
       main .muebles .carousel .carousel-inner .carousel-item .carousel-text {
@@ -1064,10 +1066,8 @@ footer {
           margin-right: 0px; }
         main .section_deco .card_deco .text_deco .card_deco_btn {
           width: 150px; }
-    main .section_proyectos {
-      max-width: 90%; }
-      main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
-        width: 150px; }
+    main .section_proyectos .card_proyectos .text_proyectos .card_proyectos_btn {
+      width: 150px; }
     main .imagenes_muebles .muebles_title {
       font-size: 15px; }
     main .grupo_muebles .muebles_img .myBtn .mueble-text {

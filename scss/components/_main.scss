@@ -323,7 +323,7 @@ main {
     /* Index - Proyectos a medida */
     .section_proyectos {
         background-color: #f5ead4;
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
         margin-top: 2%;
         margin-bottom: 2%;
@@ -825,27 +825,27 @@ main {
                     }
 
                     &.instagram {
-                        background-color: #405DE6;
+                        background-color: #86c9f3;
                     }
 
                     &.instagram:hover {
-                        background-color: darken(#405DE6, 10%);
+                        background-color: darken(#86c9f3, 10%);
                     }
 
                     &.whatsapp {
-                        background-color: #25D366;
+                        background-color: #f5b642;
                     }
 
                     &.whatsapp:hover {
-                        background-color: darken(#25D366, 10%);
+                        background-color: darken(#f5b642, 10%);
                     }
 
                     &.email {
-                        background-color: #EA4335;
+                        background-color: #a9484f;
                     }
 
                     &.email:hover {
-                        background-color: darken(#EA4335, 10%);
+                        background-color: darken(#a9484f, 10%);
                     }
                 }
             }

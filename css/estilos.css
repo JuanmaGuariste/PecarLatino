@@ -658,17 +658,17 @@ main {
           main .contacto-container .contacto-content .botones .contacto-btn:hover {
             background-color: #a34919; }
           main .contacto-container .contacto-content .botones .contacto-btn.instagram {
-            background-color: #86c9f3; }
+            background-color: #89c8ee; }
           main .contacto-container .contacto-content .botones .contacto-btn.instagram:hover {
-            background-color: #58b4ee; }
+            background-color: #5cb3e8; }
           main .contacto-container .contacto-content .botones .contacto-btn.whatsapp {
-            background-color: #f5b642; }
+            background-color: #f2b54b; }
           main .contacto-container .contacto-content .botones .contacto-btn.whatsapp:hover {
-            background-color: #f2a312; }
+            background-color: #efa11b; }
           main .contacto-container .contacto-content .botones .contacto-btn.email {
-            background-color: #a9484f; }
+            background-color: #a94850; }
           main .contacto-container .contacto-content .botones .contacto-btn.email:hover {
-            background-color: #85393e; }
+            background-color: #85393f; }
   main .ubicacion {
     background-color: rgba(245, 234, 212, 0.9);
     padding: 50px;
